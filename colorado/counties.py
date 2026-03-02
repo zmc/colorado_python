@@ -1,8 +1,8 @@
 from typing import Any
 
-from colorado_py import LicensePlateCodes
-from colorado_py._base import Place, PlaceEnum, PlaceAbbreviations
-from colorado_py.zones import Zones
+from colorado.license_plate_codes import LicensePlateCodes
+from colorado._base import Place, PlaceEnum, PlaceAbbreviations
+from colorado.zones import Zones
 
 
 class County(Place):

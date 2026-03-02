@@ -1,6 +1,6 @@
 from typing import Optional, Any
 
-from colorado_py.internal import BaseModel
+from colorado.internal import BaseModel
 
 
 class LicensePlateCodes(BaseModel):

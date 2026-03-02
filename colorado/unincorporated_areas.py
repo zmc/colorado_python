@@ -1,6 +1,6 @@
 from typing import Any
 
-from colorado_py._base import Place, PlaceEnum, PlaceAbbreviations
+from colorado._base import Place, PlaceEnum, PlaceAbbreviations
 
 
 class UnincorporatedArea(Place):

@@ -2,7 +2,7 @@ SYSTEM_PYTHON_BINARY := python3
 VIRTUAL_ENV := .venv
 VIRTUAL_BIN := $(VIRTUAL_ENV)/bin
 VIRTUAL_PYTHON_BINARY := $(VIRTUAL_BIN)/python3
-PROJECT_NAME := colorado_py
+PROJECT_NAME := colorado
 TEST_DIR := tests
 
 ## help - Display help about make targets for this Makefile

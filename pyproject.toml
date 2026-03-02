@@ -23,7 +23,7 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "colorado_py"
+name = "colorado-py"
 version = "VERSIONADDEDBYGITHUB"
 description = "A utility package for Colorado-related projects"
 readme = "README.md"

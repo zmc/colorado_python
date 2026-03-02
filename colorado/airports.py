@@ -1,7 +1,7 @@
 from typing import Any
 
-from colorado_py._base import PlaceEnum, Place, PlaceAbbreviations
-from colorado_py.municipalities import Municipalities
+from colorado._base import PlaceEnum, Place, PlaceAbbreviations
+from colorado.municipalities import Municipalities
 
 
 class Airport(Place):
