@@ -23,7 +23,7 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "coloraod"
+name = "colorado_py"
 version = "VERSIONADDEDBYGITHUB"
 description = "A utility package for Colorado-related projects"
 readme = "README.md"
@@ -61,7 +61,7 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://github.com/nwithan8/colorado_python"
-Download = "https://github.com/nwithan8/colorado_python/archive/refs/tags/VERSIONADDEDBYGITHUB.tar.gz"
+Download = "https://github.com/nwithan8/colorado_python/archive/refs/tags/0.1.0.tar.gz"
 
 [tool.setuptools.packages.find]
 where = ["."]

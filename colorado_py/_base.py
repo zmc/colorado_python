@@ -3,7 +3,7 @@ from typing import Any
 
 from pydantic import model_validator
 
-from colorado.internal import BaseModel, validate_attribute_lengths
+from colorado_py.internal import BaseModel, validate_attribute_lengths
 
 
 class PlaceAbbreviations(BaseModel):

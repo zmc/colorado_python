@@ -1,6 +1,6 @@
 from typing import Any
 
-from colorado._base import PlaceEnum, Place, PlaceAbbreviations
+from colorado_py._base import PlaceEnum, Place, PlaceAbbreviations
 
 
 class Landmark(Place):
