@@ -61,7 +61,7 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         latitude=39.4448,
         longitude=-105.9705,
         height=13690.0,
-        nearest_airport=Airports.ASPEN_PITKIN_PITKIN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     BARD_PEAK = Mountain(
         name="Bard Peak",

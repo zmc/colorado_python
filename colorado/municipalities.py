@@ -42,7 +42,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=40.16054390057366,
         longitude=-103.21439404027768,
         counties=[Counties.WASHINGTON],
-        nearest_airport=Airports.DENVER
+        nearest_airport=Airports.STERLING
     )
     ALAMOSA = Municipality(
         name="Alamosa",
@@ -68,7 +68,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=39.283884582644646,
         longitude=-106.06280700139007,
         counties=[Counties.PARK],
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     ANTONITO = Municipality(
         name="Antonito",
@@ -94,7 +94,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=39.286106171651454,
         longitude=-103.2755051561436,
         counties=[Counties.LINCOLN],
-        nearest_airport=Airports.COLORADO_SPRINGS
+        nearest_airport=Airports.STERLING
     )
     ARVADA = Municipality(
         name="Arvada",
@@ -120,7 +120,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=39.19110451823167,
         longitude=-106.81754916020952,
         counties=[Counties.PITKIN],
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     AULT = Municipality(
         name="Ault",
@@ -172,7 +172,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=39.36887932690354,
         longitude=-107.0328347281656,
         counties=[Counties.EAGLE, Counties.PITKIN],
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     BAYFIELD = Municipality(
         name="Bayfield",
@@ -224,7 +224,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=39.30416893007231,
         longitude=-102.42464895454725,
         counties=[Counties.KIT_CARSON],
-        nearest_airport=Airports.PUEBLO
+        nearest_airport=Airports.SOUTHEAST_COLORADO,
     )
     BLACK_HAWK = Municipality(
         name="Black Hawk",
@@ -263,7 +263,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=39.42971610358546,
         longitude=-106.04391771358416,
         counties=[Counties.SUMMIT],
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     BONANZA = Municipality(
         name="Bonanza",
@@ -341,7 +341,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=39.481660010867984,
         longitude=-106.03836211864223,
         counties=[Counties.SUMMIT],
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     BRIGHTON = Municipality(
         name="Brighton",
@@ -393,7 +393,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=40.25887518606942,
         longitude=-103.6238465492246,
         counties=[Counties.MORGAN],
-        nearest_airport=Airports.DENVER
+        nearest_airport=Airports.STERLING
     )
     BUENA_VISTA = Municipality(
         name="Buena Vista",
@@ -406,7 +406,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=38.842224017267654,
         longitude=-106.13113906746224,
         counties=[Counties.CHAFFEE],
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     BURLINGTON = Municipality(
         name="Burlington",
@@ -419,7 +419,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=39.306114740695364,
         longitude=-102.2693657172918,
         counties=[Counties.KIT_CARSON],
-        nearest_airport=Airports.PUEBLO
+        nearest_airport=Airports.SOUTHEAST_COLORADO
     )
     CALHAN = Municipality(
         name="Calhan",
@@ -445,7 +445,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=37.105025187708804,
         longitude=-102.57964697041172,
         counties=[Counties.BACA],
-        nearest_airport=Airports.PUEBLO
+        nearest_airport=Airports.SOUTHEAST_COLORADO
     )
     CANON_CITY = Municipality(
         name="Cañon City",
@@ -575,7 +575,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=38.10695778309707,
         longitude=-103.51022798692372,
         counties=[Counties.OTERO],
-        nearest_airport=Airports.PUEBLO
+        nearest_airport=Airports.SOUTHEAST_COLORADO
     )
     CHERRY_HILLS_VILLAGE = Municipality(
         name="Cherry Hills Village",
@@ -601,7 +601,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=38.82140156342473,
         longitude=-102.35325288416135,
         counties=[Counties.CHEYENNE],
-        nearest_airport=Airports.PUEBLO
+        nearest_airport=Airports.SOUTHEAST_COLORADO
     )
     COAL_CREEK = Municipality(
         name="Coal Creek",
@@ -783,7 +783,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=40.85888662779365,
         longitude=-102.80103612539585,
         counties=[Counties.LOGAN],
-        nearest_airport=Airports.DENVER
+        nearest_airport=Airports.STERLING
     )
     CROWLEY = Municipality(
         name="Crowley",
@@ -952,7 +952,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=38.4805678851622,
         longitude=-102.78187235286333,
         counties=[Counties.KIOWA],
-        nearest_airport=Airports.PUEBLO
+        nearest_airport=Airports.SOUTHEAST_COLORADO
     )
     EAGLE = Municipality(
         name="Eagle",
@@ -991,7 +991,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=40.113883843500105,
         longitude=-102.4907671612292,
         counties=[Counties.YUMA],
-        nearest_airport=Airports.DENVER
+        nearest_airport=Airports.STERLING
     )
     EDGEWATER = Municipality(
         name="Edgewater",
@@ -1095,7 +1095,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=39.22471887862463,
         longitude=-106.00197208064321,
         counties=[Counties.PARK],
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     FEDERAL_HEIGHTS = Municipality(
         name="Federal Heights",
@@ -1134,7 +1134,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=39.29305278608126,
         longitude=-103.06716780717863,
         counties=[Counties.KIT_CARSON],
-        nearest_airport=Airports.DENVER
+        nearest_airport=Airports.SOUTHEAST_COLORADO
     )
     FLEMING = Municipality(
         name="Fleming",
@@ -1147,7 +1147,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=40.679998099875206,
         longitude=-102.83937241286526,
         counties=[Counties.LOGAN],
-        nearest_airport=Airports.DENVER
+        nearest_airport=Airports.STERLING
     )
     FLORENCE = Municipality(
         name="Florence",
@@ -1199,7 +1199,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=40.25026477242511,
         longitude=-103.79996089057028,
         counties=[Counties.MORGAN],
-        nearest_airport=Airports.DENVER
+        nearest_airport=Airports.STERLING
     )
     FOUNTAIN = Municipality(
         name="Fountain",
@@ -1394,7 +1394,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=38.06390455206366,
         longitude=-102.31047669765462,
         counties=[Counties.PROWERS],
-        nearest_airport=Airports.PUEBLO
+        nearest_airport=Airports.SOUTHEAST_COLORADO
     )
     GRANBY = Municipality(
         name="Granby",
@@ -1524,7 +1524,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=38.12029426615311,
         longitude=-102.21991968173444,
         counties=[Counties.PROWERS],
-        nearest_airport=Airports.PUEBLO
+        nearest_airport=Airports.SOUTHEAST_COLORADO
     )
     HAXTUN = Municipality(
         name="Haxtun",
@@ -1537,7 +1537,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=40.641108909376555,
         longitude=-102.62686805687667,
         counties=[Counties.PHILLIPS],
-        nearest_airport=Airports.DENVER
+        nearest_airport=Airports.STERLING
     )
     HAYDEN = Municipality(
         name="Hayden",
@@ -1563,7 +1563,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=40.325819502574404,
         longitude=-103.52189883351787,
         counties=[Counties.MORGAN],
-        nearest_airport=Airports.DENVER
+        nearest_airport=Airports.STERLING
     )
     HOLLY = Municipality(
         name="Holly",
@@ -1576,7 +1576,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=38.05224006183107,
         longitude=-102.12269425137288,
         counties=[Counties.PROWERS],
-        nearest_airport=Airports.PUEBLO
+        nearest_airport=Airports.SOUTHEAST_COLORADO
     )
     HOLYOKE = Municipality(
         name="Holyoke",
@@ -1589,7 +1589,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=40.584443624000585,
         longitude=-102.30241987136469,
         counties=[Counties.PHILLIPS],
-        nearest_airport=Airports.DENVER
+        nearest_airport=Airports.STERLING
     )
     HOOPER = Municipality(
         name="Hooper",
@@ -1693,7 +1693,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=40.75916269480257,
         longitude=-103.06659917719702,
         counties=[Counties.LOGAN],
-        nearest_airport=Airports.DENVER
+        nearest_airport=Airports.STERLING
     )
     JAMESTOWN = Municipality(
         name="Jamestown",
@@ -1732,7 +1732,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=40.98833258373469,
         longitude=-102.26436151096613,
         counties=[Counties.SEDGWICK],
-        nearest_airport=Airports.DENVER
+        nearest_airport=Airports.STERLING
     )
     KEENESBURG = Municipality(
         name="Keenesburg",
@@ -1784,7 +1784,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=37.246691664210175,
         longitude=-103.35217056522134,
         counties=[Counties.LAS_ANIMAS],
-        nearest_airport=Airports.PUEBLO
+        nearest_airport=Airports.SOUTHEAST_COLORADO
     )
     KIOWA = Municipality(
         name="Kiowa",
@@ -1810,7 +1810,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=38.76111932616783,
         longitude=-102.78937618345088,
         counties=[Counties.CHEYENNE],
-        nearest_airport=Airports.PUEBLO
+        nearest_airport=Airports.SOUTHEAST_COLORADO
     )
     KREMMLING = Municipality(
         name="Kremmling",
@@ -1849,7 +1849,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=37.9850153627396,
         longitude=-103.54384168182412,
         counties=[Counties.OTERO],
-        nearest_airport=Airports.PUEBLO
+        nearest_airport=Airports.SOUTHEAST_COLORADO
     )
     LA_VETA = Municipality(
         name="La Veta",
@@ -1927,7 +1927,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=38.08723703638498,
         longitude=-102.62075897395562,
         counties=[Counties.PROWERS],
-        nearest_airport=Airports.PUEBLO
+        nearest_airport=Airports.SOUTHEAST_COLORADO
     )
     LARKSPUR = Municipality(
         name="Larkspur",
@@ -1953,7 +1953,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=38.066679795239736,
         longitude=-103.2227175152899,
         counties=[Counties.BENT],
-        nearest_airport=Airports.PUEBLO
+        nearest_airport=Airports.SOUTHEAST_COLORADO
     )
     LASALLE = Municipality(
         name="LaSalle",
@@ -1979,7 +1979,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=39.250829161129275,
         longitude=-106.29253414905992,
         counties=[Counties.LAKE],
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     LIMON = Municipality(
         name="Limon",
@@ -2031,7 +2031,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=40.27054297349616,
         longitude=-103.8296830998296,
         counties=[Counties.MORGAN],
-        nearest_airport=Airports.DENVER
+        nearest_airport=Airports.STERLING
     )
     LONE_TREE = Municipality(
         name="Lone Tree",
@@ -2161,7 +2161,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=39.07221677633197,
         longitude=-107.18894822883067,
         counties=[Counties.GUNNISON],
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     MEAD = Municipality(
         name="Mead",
@@ -2200,7 +2200,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=40.48248903652103,
         longitude=-103.3513377110703,
         counties=[Counties.LOGAN],
-        nearest_airport=Airports.DENVER
+        nearest_airport=Airports.STERLING
     )
     MILLIKEN = Municipality(
         name="Milliken",
@@ -2317,7 +2317,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=38.90862516936443,
         longitude=-106.96947846189317,
         counties=[Counties.GUNNISON],
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     MOUNTAIN_VIEW = Municipality(
         name="Mountain View",
@@ -2525,7 +2525,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=40.148878816009756,
         longitude=-102.96300237920752,
         counties=[Counties.WASHINGTON],
-        nearest_airport=Airports.DENVER
+        nearest_airport=Airports.STERLING
     )
     OURAY = Municipality(
         name="Ouray",
@@ -2551,7 +2551,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=40.9605541713928,
         longitude=-102.38797433745265,
         counties=[Counties.SEDGWICK],
-        nearest_airport=Airports.DENVER
+        nearest_airport=Airports.STERLING
     )
     PAGOSA_SPRINGS = Municipality(
         name="Pagosa Springs",
@@ -2603,7 +2603,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=40.612220016848596,
         longitude=-102.47269891562667,
         counties=[Counties.PHILLIPS],
-        nearest_airport=Airports.DENVER
+        nearest_airport=Airports.STERLING
     )
     PAONIA = Municipality(
         name="Paonia",
@@ -2655,7 +2655,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=40.96277091990271,
         longitude=-103.11243391254868,
         counties=[Counties.LOGAN],
-        nearest_airport=Airports.DENVER
+        nearest_airport=Airports.STERLING
     )
     PIERCE = Municipality(
         name="Pierce",
@@ -2720,7 +2720,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=37.370299612091685,
         longitude=-102.8596556614134,
         counties=[Counties.BACA],
-        nearest_airport=Airports.PUEBLO
+        nearest_airport=Airports.SOUTHEAST_COLORADO
     )
     PUEBLO = Municipality(
         name="Pueblo",
@@ -2772,7 +2772,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=40.60804842018672,
         longitude=-103.84246004382982,
         counties=[Counties.WELD],
-        nearest_airport=Airports.DENVER
+        nearest_airport=Airports.STERLING
     )
     RED_CLIFF = Municipality(
         name="Red Cliff",
@@ -2954,7 +2954,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=40.936386657985054,
         longitude=-102.52547616746403,
         counties=[Counties.SEDGWICK],
-        nearest_airport=Airports.DENVER
+        nearest_airport=Airports.STERLING
     )
     SEIBERT = Municipality(
         name="Seibert",
@@ -2967,7 +2967,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=39.299165600236734,
         longitude=-102.86910726052236,
         counties=[Counties.KIT_CARSON],
-        nearest_airport=Airports.DENVER
+        nearest_airport=Airports.SOUTHEAST_COLORADO
     )
     SEVERANCE = Municipality(
         name="Severance",
@@ -3006,7 +3006,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=38.46668741401601,
         longitude=-102.29214023397287,
         counties=[Counties.KIOWA],
-        nearest_airport=Airports.PUEBLO
+        nearest_airport=Airports.SOUTHEAST_COLORADO
     )
     SILT = Municipality(
         name="Silt",
@@ -3097,7 +3097,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=39.21304801267007,
         longitude=-106.93783118903116,
         counties=[Counties.PITKIN],
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     SOUTH_FORK = Municipality(
         name="South Fork",
@@ -3123,7 +3123,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=37.408354833005376,
         longitude=-102.61437090664646,
         counties=[Counties.BACA],
-        nearest_airport=Airports.PUEBLO
+        nearest_airport=Airports.SOUTHEAST_COLORADO
     )
     STARKVILLE = Municipality(
         name="Starkville",
@@ -3162,7 +3162,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=40.625548166277156,
         longitude=-103.20771879414866,
         counties=[Counties.LOGAN],
-        nearest_airport=Airports.DENVER
+        nearest_airport=Airports.STERLING
     )
     STRATTON = Municipality(
         name="Stratton",
@@ -3279,7 +3279,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=37.56113066965287,
         longitude=-102.39769796978601,
         counties=[Counties.BACA],
-        nearest_airport=Airports.PUEBLO
+        nearest_airport=Airports.SOUTHEAST_COLORADO
     )
     VAIL = Municipality(
         name="Vail",
@@ -3318,7 +3318,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=37.37363343792504,
         longitude=-102.44631026365687,
         counties=[Counties.BACA],
-        nearest_airport=Airports.PUEBLO
+        nearest_airport=Airports.SOUTHEAST_COLORADO
     )
     VONA = Municipality(
         name="Vona",
@@ -3331,7 +3331,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=39.303610909350255,
         longitude=-102.74299263046106,
         counties=[Counties.KIT_CARSON],
-        nearest_airport=Airports.DENVER
+        nearest_airport=Airports.SOUTHEAST_COLORADO
     )
     WALDEN = Municipality(
         name="Walden",
@@ -3370,7 +3370,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=37.38613334973962,
         longitude=-102.27824862443555,
         counties=[Counties.BACA],
-        nearest_airport=Airports.PUEBLO
+        nearest_airport=Airports.SOUTHEAST_COLORADO
     )
     WARD = Municipality(
         name="Ward",
@@ -3461,7 +3461,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=38.154181139978334,
         longitude=-102.7196497047841,
         counties=[Counties.PROWERS],
-        nearest_airport=Airports.PUEBLO
+        nearest_airport=Airports.SOUTHEAST_COLORADO
     )
     WILLIAMSBURG = Municipality(
         name="Williamsburg",
@@ -3526,7 +3526,7 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=40.075829756553446,
         longitude=-102.22325899183505,
         counties=[Counties.YUMA],
-        nearest_airport=Airports.DENVER
+        nearest_airport=Airports.STERLING
     )
     YAMPA = Municipality(
         name="Yampa",
@@ -3552,5 +3552,5 @@ class Municipalities(PopulatedPlaceEnum):
         latitude=40.12221502884205,
         longitude=-102.72521921912147,
         counties=[Counties.YUMA],
-        nearest_airport=Airports.DENVER
+        nearest_airport=Airports.STERLING
     )
