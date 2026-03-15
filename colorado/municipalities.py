@@ -1,8 +1,7 @@
 from typing import Any
 
 from colorado.airports import Airports
-from colorado.base.named_location import NamedLocationAbbreviations
-from colorado.base.populated_place import PopulatedPlace, PopulatedPlaceEnum
+from colorado.base.populated_place import PopulatedPlace, PopulatedPlaceEnum, Abbreviations
 from colorado.counties import Counties
 
 
@@ -21,7 +20,7 @@ class Municipalities(PopulatedPlaceEnum):
     """
     AGUILAR = Municipality(
         name="Aguilar",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="AGU",
             five_letter="AGULR",
             seven_letter="AGUILAR",
@@ -34,7 +33,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     AKRON = Municipality(
         name="Akron",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="AKR",
             five_letter="AKRON",
             seven_letter="AKRON",
@@ -47,7 +46,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     ALAMOSA = Municipality(
         name="Alamosa",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="AMS",
             five_letter="ALMSA",
             seven_letter="ALAMOSA",
@@ -60,7 +59,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     ALMA = Municipality(
         name="Alma",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="ALM",
             five_letter="ALMA",
             seven_letter="ALMA",
@@ -73,7 +72,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     ANTONITO = Municipality(
         name="Antonito",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="ANT",
             five_letter="ANTNO",
             seven_letter="ANTNTO",
@@ -86,7 +85,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     ARRIBA = Municipality(
         name="Arriba",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="ARB",
             five_letter="ARRBA",
             seven_letter="ARRIBA",
@@ -99,7 +98,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     ARVADA = Municipality(
         name="Arvada",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="ARV",
             five_letter="ARVDA",
             seven_letter="ARVADA",
@@ -112,7 +111,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     ASPEN = Municipality(
         name="Aspen",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="ASP",
             five_letter="ASPEN",
             seven_letter="ASPEN",
@@ -125,7 +124,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     AULT = Municipality(
         name="Ault",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="ALT",
             five_letter="AULT",
             seven_letter="AULT",
@@ -138,7 +137,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     AURORA = Municipality(
         name="Aurora",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="AUR",
             five_letter="AURRA",
             seven_letter="AURORA",
@@ -151,7 +150,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     AVON = Municipality(
         name="Avon",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="AVN",
             five_letter="AVON",
             seven_letter="AVON",
@@ -164,7 +163,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     BASALT = Municipality(
         name="Basalt",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BST",
             five_letter="BSALT",
             seven_letter="BASALT",
@@ -177,7 +176,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     BAYFIELD = Municipality(
         name="Bayfield",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BYF",
             five_letter="BYFLD",
             seven_letter="BAYFLD",
@@ -190,7 +189,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     BENNETT = Municipality(
         name="Bennett",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BNT",
             five_letter="BENNT",
             seven_letter="BENNETT",
@@ -203,7 +202,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     BERTHOUD = Municipality(
         name="Berthoud",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BRT",
             five_letter="BRTHD",
             seven_letter="BERTHD",
@@ -216,7 +215,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     BETHUNE = Municipality(
         name="Bethune",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BTH",
             five_letter="BTHNE",
             seven_letter="BETHUNE",
@@ -229,7 +228,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     BLACK_HAWK = Municipality(
         name="Black Hawk",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BLH",
             five_letter="BLKHK",
             seven_letter="BLKHAWK",
@@ -242,7 +241,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     BLANCA = Municipality(
         name="Blanca",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BLA",
             five_letter="BLNCA",
             seven_letter="BLANCA",
@@ -255,7 +254,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     BLUE_RIVER = Municipality(
         name="Blue River",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BLR",
             five_letter="BLRVR",
             seven_letter="BLRIVER",
@@ -268,7 +267,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     BONANZA = Municipality(
         name="Bonanza",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BNZ",
             five_letter="BNANZ",
             seven_letter="BONANZA",
@@ -281,7 +280,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     BOONE = Municipality(
         name="Boone",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BNE",
             five_letter="BOONE",
             seven_letter="BOONE",
@@ -294,7 +293,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     BOULDER = Municipality(
         name="Boulder",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BDL",
             five_letter="BOULR",
             seven_letter="BOULDER",
@@ -307,7 +306,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     BOW_MAR = Municipality(
         name="Bow Mar",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BWM",
             five_letter="BOWMR",
             seven_letter="BOWMAR",
@@ -320,7 +319,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     BRANSON = Municipality(
         name="Branson",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BRS",
             five_letter="BRNSN",
             seven_letter="BRANSON",
@@ -333,7 +332,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     BRECKENRIDGE = Municipality(
         name="Breckenridge",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BCK",
             five_letter="BRECK",
             seven_letter="BRKNRDG",
@@ -346,7 +345,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     BRIGHTON = Municipality(
         name="Brighton",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BRT",
             five_letter="BRGHT",
             seven_letter="BRIGHTN",
@@ -359,7 +358,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     BROOKSIDE = Municipality(
         name="Brookside",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BKS",
             five_letter="BRKSD",
             seven_letter="BROOKSD",
@@ -372,7 +371,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     BROOMFIELD = Municipality(
         name="Broomfield",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BRM",
             five_letter="BROOM",
             seven_letter="BROOMFD",
@@ -385,7 +384,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     BRUSH = Municipality(
         name="Brush",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BSH",
             five_letter="BRUSH",
             seven_letter="BRUSH",
@@ -398,7 +397,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     BUENA_VISTA = Municipality(
         name="Buena Vista",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BVT",
             five_letter="BNVST",
             seven_letter="BNVISTA",
@@ -411,7 +410,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     BURLINGTON = Municipality(
         name="Burlington",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BRL",
             five_letter="BRLNG",
             seven_letter="BURLNGT",
@@ -424,7 +423,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     CALHAN = Municipality(
         name="Calhan",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CLH",
             five_letter="CLHAN",
             seven_letter="CALHAN",
@@ -437,7 +436,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     CAMPO = Municipality(
         name="Campo",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CMP",
             five_letter="CAMPO",
             seven_letter="CAMPO",
@@ -450,7 +449,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     CANON_CITY = Municipality(
         name="Cañon City",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CNC",
             five_letter="CANON",
             seven_letter="CANCITY",
@@ -463,7 +462,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     CARBONATE = Municipality(
         name="Carbonate",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CRB",
             five_letter="CBNTE",
             seven_letter="CRBNATE",
@@ -476,7 +475,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     CARBONDALE = Municipality(
         name="Carbondale",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CRD",
             five_letter="CBNDL",
             seven_letter="CRBDALE",
@@ -489,7 +488,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     CASTLE_PINES = Municipality(
         name="Castle Pines",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CSP",
             five_letter="CSTLP",
             seven_letter="CSTLPNS",
@@ -502,7 +501,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     CASTLE_ROCK = Municipality(
         name="Castle Rock",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CSR",
             five_letter="CSTLR",
             seven_letter="CSTLRCK",
@@ -515,7 +514,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     CEDAREDGE = Municipality(
         name="Cedaredge",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CDG",
             five_letter="CREDG",
             seven_letter="CDREDGE",
@@ -528,7 +527,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     CENTENNIAL = Municipality(
         name="Centennial",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CEN",
             five_letter="CENTL",
             seven_letter="CENTNNL",
@@ -541,7 +540,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     CENTER = Municipality(
         name="Center",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CTR",
             five_letter="CENTR",
             seven_letter="CENTER",
@@ -554,7 +553,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     CENTRAL_CITY = Municipality(
         name="Central City",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CCT",
             five_letter="CNTCY",
             seven_letter="CENCITY",
@@ -567,7 +566,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     CHERAW = Municipality(
         name="Cheraw",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CRW",
             five_letter="CHRAW",
             seven_letter="CHERAW",
@@ -580,7 +579,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     CHERRY_HILLS_VILLAGE = Municipality(
         name="Cherry Hills Village",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CHV",
             five_letter="CHRVL",
             seven_letter="CHRVHLL",
@@ -593,7 +592,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     CHEYENNE_WELLS = Municipality(
         name="Cheyenne Wells",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CHW",
             five_letter="CHYWL",
             seven_letter="CHYWLLS",
@@ -606,7 +605,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     COAL_CREEK = Municipality(
         name="Coal Creek",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CLC",
             five_letter="COALC",
             seven_letter="COALCRK",
@@ -619,7 +618,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     COKEDALE = Municipality(
         name="Cokedale",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CKD",
             five_letter="COKDL",
             seven_letter="COKEDAL",
@@ -632,7 +631,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     COLLBRAN = Municipality(
         name="Collbran",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CLB",
             five_letter="COLLB",
             seven_letter="COLLBRN",
@@ -645,7 +644,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     COLORADO_SPRINGS = Municipality(
         name="Colorado Springs",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="COS",
             five_letter="CSPRG",
             seven_letter="COSPRGS",
@@ -658,7 +657,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     COLUMBINE_VALLEY = Municipality(
         name="Columbine Valley",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CLV",
             five_letter="CLBVY",
             seven_letter="CLBNVLY",
@@ -671,7 +670,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     COMMERCE_CITY = Municipality(
         name="Commerce City",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CMC",
             five_letter="CMRCE",
             seven_letter="COMCITY",
@@ -684,7 +683,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     CORTEZ = Municipality(
         name="Cortez",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CRZ",
             five_letter="CRTEZ",
             seven_letter="CORTEZ",
@@ -697,7 +696,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     CRAIG = Municipality(
         name="Craig",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CRG",
             five_letter="CRAIG",
             seven_letter="CRAIG",
@@ -710,7 +709,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     CRAWFORD = Municipality(
         name="Crawford",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CRF",
             five_letter="CRWFD",
             seven_letter="CRWFORD",
@@ -723,7 +722,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     CREEDE = Municipality(
         name="Creede",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CRD",
             five_letter="CREED",
             seven_letter="CREEDE",
@@ -736,7 +735,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     CRESTED_BUTTE = Municipality(
         name="Crested Butte",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CRB",
             five_letter="CRSTB",
             seven_letter="CRSTBT",
@@ -749,7 +748,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     CRESTONE = Municipality(
         name="Crestone",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CRS",
             five_letter="CRSTN",
             seven_letter="CRSTONE",
@@ -762,7 +761,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     CRIPPLE_CREEK = Municipality(
         name="Cripple Creek",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CRP",
             five_letter="CRPLC",
             seven_letter="CRPLCRK",
@@ -775,7 +774,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     CROOK = Municipality(
         name="Crook",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CRK",
             five_letter="CROOK",
             seven_letter="CROOK",
@@ -788,7 +787,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     CROWLEY = Municipality(
         name="Crowley",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CRW",
             five_letter="CRWLY",
             seven_letter="CROWLEY",
@@ -801,7 +800,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     DACONO = Municipality(
         name="Dacono",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="DAC",
             five_letter="DACNO",
             seven_letter="DACONO",
@@ -814,7 +813,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     DE_BEQUE = Municipality(
         name="De Beque",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="DBQ",
             five_letter="DEBEQ",
             seven_letter="DEBEQUE",
@@ -827,7 +826,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     DEER_TRAIL = Municipality(
         name="Deer Trail",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="DRT",
             five_letter="DRTRL",
             seven_letter="DRTRAIL",
@@ -840,7 +839,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     DEL_NORTE = Municipality(
         name="Del Norte",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="DLN",
             five_letter="DELNT",
             seven_letter="DELNORT",
@@ -853,7 +852,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     DELTA = Municipality(
         name="Delta",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="DLT",
             five_letter="DELTA",
             seven_letter="DELTA",
@@ -866,7 +865,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     DENVER = Municipality(
         name="Denver",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="DEN",
             five_letter="DENVR",
             seven_letter="DENVER",
@@ -879,7 +878,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     DILLON = Municipality(
         name="Dillon",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="DLN",
             five_letter="DLLN",
             seven_letter="DILLON",
@@ -892,7 +891,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     DINOSAUR = Municipality(
         name="Dinosaur",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="DNS",
             five_letter="DINOS",
             seven_letter="DINOSR",
@@ -905,7 +904,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     DOLORES = Municipality(
         name="Dolores",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="DLS",
             five_letter="DOLOS",
             seven_letter="DOLORES",
@@ -918,7 +917,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     DOVE_CREEK = Municipality(
         name="Dove Creek",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="DVC",
             five_letter="DOVEC",
             seven_letter="DVCREEK",
@@ -931,7 +930,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     DURANGO = Municipality(
         name="Durango",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="DUR",
             five_letter="DURAN",
             seven_letter="DURANGO",
@@ -944,7 +943,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     EADS = Municipality(
         name="Eads",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="EAD",
             five_letter="EADS",
             seven_letter="EADS",
@@ -957,7 +956,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     EAGLE = Municipality(
         name="Eagle",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="EAG",
             five_letter="EAGLE",
             seven_letter="EAGLE",
@@ -970,7 +969,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     EATON = Municipality(
         name="Eaton",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="EAT",
             five_letter="EATON",
             seven_letter="EATON",
@@ -983,7 +982,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     ECKLEY = Municipality(
         name="Eckley",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="ECK",
             five_letter="ECKLY",
             seven_letter="ECKLEY",
@@ -996,7 +995,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     EDGEWATER = Municipality(
         name="Edgewater",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="EDW",
             five_letter="EDGWT",
             seven_letter="EDGWATR",
@@ -1009,7 +1008,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     ELIZABETH = Municipality(
         name="Elizabeth",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="ELI",
             five_letter="ELIZB",
             seven_letter="ELZBETH",
@@ -1022,7 +1021,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     EMPIRE = Municipality(
         name="Empire",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="EMP",
             five_letter="EMPR",
             seven_letter="EMPIRE",
@@ -1035,7 +1034,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     ENGLEWOOD = Municipality(
         name="Englewood",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="ENL",
             five_letter="ENGLW",
             seven_letter="ENGLWD",
@@ -1048,7 +1047,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     ERIE = Municipality(
         name="Erie",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="ERI",
             five_letter="ERIE",
             seven_letter="ERIE",
@@ -1061,7 +1060,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     ESTES_PARK = Municipality(
         name="Estes Park",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="ESP",
             five_letter="ESTPK",
             seven_letter="ESTPARK",
@@ -1074,7 +1073,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     EVANS = Municipality(
         name="Evans",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="EVA",
             five_letter="EVANS",
             seven_letter="EVANS",
@@ -1087,7 +1086,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     FAIRPLAY = Municipality(
         name="Fairplay",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="FPL",
             five_letter="FAIRP",
             seven_letter="FAIRPLY",
@@ -1100,7 +1099,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     FEDERAL_HEIGHTS = Municipality(
         name="Federal Heights",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="FHE",
             five_letter="FEDHG",
             seven_letter="FEDHGTS",
@@ -1113,7 +1112,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     FIRESTONE = Municipality(
         name="Firestone",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="FST",
             five_letter="FIRES",
             seven_letter="FIRESTN",
@@ -1126,7 +1125,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     FLAGLER = Municipality(
         name="Flagler",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="FLG",
             five_letter="FLAGL",
             seven_letter="FLAGLER",
@@ -1139,7 +1138,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     FLEMING = Municipality(
         name="Fleming",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="FLM",
             five_letter="FLEMG",
             seven_letter="FLEMING",
@@ -1152,7 +1151,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     FLORENCE = Municipality(
         name="Florence",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="FLR",
             five_letter="FLRNC",
             seven_letter="FLOREN",
@@ -1165,7 +1164,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     FORT_COLLINS = Municipality(
         name="Fort Collins",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="FCL",
             five_letter="FOCO",
             seven_letter="FORTCLL",
@@ -1178,7 +1177,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     FORT_LUPTON = Municipality(
         name="Fort Lupton",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="FLP",
             five_letter="FLUPT",
             seven_letter="FORTLUP",
@@ -1191,7 +1190,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     FORT_MORGAN = Municipality(
         name="Fort Morgan",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="FMG",
             five_letter="FMORG",
             seven_letter="FORTMOR",
@@ -1204,7 +1203,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     FOUNTAIN = Municipality(
         name="Fountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="FTN",
             five_letter="FOUNT",
             seven_letter="FOUNTN",
@@ -1217,7 +1216,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     FOWLER = Municipality(
         name="Fowler",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="FOW",
             five_letter="FOWLR",
             seven_letter="FOWLER",
@@ -1230,7 +1229,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     FOXFIELD = Municipality(
         name="Foxfield",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="FXF",
             five_letter="FXFLD",
             seven_letter="FOXFLD",
@@ -1243,7 +1242,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     FRASER = Municipality(
         name="Fraser",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="FRS",
             five_letter="FRASR",
             seven_letter="FRASER",
@@ -1256,7 +1255,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     FREDERICK = Municipality(
         name="Frederick",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="FRD",
             five_letter="FREDK",
             seven_letter="FREDRCK",
@@ -1269,7 +1268,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     FRISCO = Municipality(
         name="Frisco",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="FRI",
             five_letter="FRSCO",
             seven_letter="FRISCO",
@@ -1282,7 +1281,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     FRUITA = Municipality(
         name="Fruita",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="FRU",
             five_letter="FRUIT",
             seven_letter="FRUITA",
@@ -1295,7 +1294,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     GARDEN_CITY = Municipality(
         name="Garden City",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GDC",
             five_letter="GRDNC",
             seven_letter="GARDEN",
@@ -1308,7 +1307,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     GENOA = Municipality(
         name="Genoa",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GNO",
             five_letter="GENOA",
             seven_letter="GENOA",
@@ -1321,7 +1320,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     GEORGETOWN = Municipality(
         name="Georgetown",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GEO",
             five_letter="GEORT",
             seven_letter="GEORGTN",
@@ -1334,7 +1333,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     GILCREST = Municipality(
         name="Gilcrest",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GLC",
             five_letter="GLCST",
             seven_letter="GILCRST",
@@ -1347,7 +1346,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     GLENDALE = Municipality(
         name="Glendale",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GLN",
             five_letter="GLNDL",
             seven_letter="GLENDA",
@@ -1360,7 +1359,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     GLENWOOD_SPRINGS = Municipality(
         name="Glenwood Springs",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GLW",
             five_letter="GLWDS",
             seven_letter="GWSPRGS",
@@ -1373,7 +1372,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     GOLDEN = Municipality(
         name="Golden",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GLD",
             five_letter="GLDN",
             seven_letter="GOLDEN",
@@ -1386,7 +1385,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     GRANADA = Municipality(
         name="Granada",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GRN",
             five_letter="GRNDA",
             seven_letter="GRANADA",
@@ -1399,7 +1398,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     GRANBY = Municipality(
         name="Granby",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GRB",
             five_letter="GRNBY",
             seven_letter="GRANBY",
@@ -1412,7 +1411,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     GRAND_JUNCTION = Municipality(
         name="Grand Junction",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GJT",
             five_letter="GRJCT",
             seven_letter="GRNDJCT",
@@ -1425,7 +1424,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     GRAND_LAKE = Municipality(
         name="Grand Lake",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GDL",
             five_letter="GRDLK",
             seven_letter="GRANDLK",
@@ -1438,7 +1437,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     GREELEY = Municipality(
         name="Greeley",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GRL",
             five_letter="GRELY",
             seven_letter="GREELY",
@@ -1451,7 +1450,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     GREEN_MOUNTAIN_FALLS = Municipality(
         name="Green Mountain Falls",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GMF",
             five_letter="GRMNT",
             seven_letter="GRMTFLS",
@@ -1464,7 +1463,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     GREENWOOD_VILLAGE = Municipality(
         name="Greenwood Village",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GRV",
             five_letter="GRWDV",
             seven_letter="GRWDVL",
@@ -1477,7 +1476,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     GROVER = Municipality(
         name="Grover",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GVR",
             five_letter="GROVR",
             seven_letter="GROVER",
@@ -1490,7 +1489,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     GUNNISON = Municipality(
         name="Gunnison",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GUN",
             five_letter="GUNN",
             seven_letter="GUNNISN",
@@ -1503,7 +1502,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     GYPSUM = Municipality(
         name="Gypsum",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GYP",
             five_letter="GYPSM",
             seven_letter="GYPSUM",
@@ -1516,7 +1515,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     HARTMAN = Municipality(
         name="Hartman",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="HRT",
             five_letter="HRTMN",
             seven_letter="HARTMAN",
@@ -1529,7 +1528,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     HAXTUN = Municipality(
         name="Haxtun",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="HAX",
             five_letter="HAXTN",
             seven_letter="HAXTUN",
@@ -1542,7 +1541,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     HAYDEN = Municipality(
         name="Hayden",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="HAY",
             five_letter="HAYDN",
             seven_letter="HAYDEN",
@@ -1555,7 +1554,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     HILLROSE = Municipality(
         name="Hillrose",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="HRS",
             five_letter="HILRS",
             seven_letter="HILLRS",
@@ -1568,7 +1567,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     HOLLY = Municipality(
         name="Holly",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="HOL",
             five_letter="HOLLY",
             seven_letter="HOLLY",
@@ -1581,7 +1580,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     HOLYOKE = Municipality(
         name="Holyoke",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="HLY",
             five_letter="HOLYK",
             seven_letter="HOLYOKE",
@@ -1594,7 +1593,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     HOOPER = Municipality(
         name="Hooper",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="HPR",
             five_letter="HOOPR",
             seven_letter="HOOPER",
@@ -1607,7 +1606,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     HOT_SULPHER_SPRINGS = Municipality(
         name="Hot Sulphur Springs",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="HSS",
             five_letter="HTSUL",
             seven_letter="HTSULP",
@@ -1620,7 +1619,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     HOTCHKISS = Municipality(
         name="Hotchkiss",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="HCK",
             five_letter="HOTCK",
             seven_letter="HOTCHKS",
@@ -1633,7 +1632,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     HUDSON = Municipality(
         name="Hudson",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="HDS",
             five_letter="HUDSN",
             seven_letter="HUDSON",
@@ -1646,7 +1645,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     HUGO = Municipality(
         name="Hugo",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="HUG",
             five_letter="HUGO",
             seven_letter="HUGO",
@@ -1659,7 +1658,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     IDAHO_SPRINGS = Municipality(
         name="Idaho Springs",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="IDS",
             five_letter="IDSPR",
             seven_letter="IDSPRGS",
@@ -1672,7 +1671,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     IGNACIO = Municipality(
         name="Ignacio",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="IGN",
             five_letter="IGNAC",
             seven_letter="IGNACIO",
@@ -1685,7 +1684,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     ILIFF = Municipality(
         name="Iliff",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="ILF",
             five_letter="ILIFF",
             seven_letter="ILIFF",
@@ -1698,7 +1697,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     JAMESTOWN = Municipality(
         name="Jamestown",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="JAM",
             five_letter="JAMST",
             seven_letter="JAMESTN",
@@ -1711,7 +1710,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     JOHNSTOWN = Municipality(
         name="Johnstown",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="JHN",
             five_letter="JOHNS",
             seven_letter="JOHNSTN",
@@ -1724,7 +1723,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     JULESBURG = Municipality(
         name="Julesburg",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="JUL",
             five_letter="JULSB",
             seven_letter="JULSBRG",
@@ -1737,7 +1736,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     KEENESBURG = Municipality(
         name="Keenesburg",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="KNS",
             five_letter="KEENS",
             seven_letter="KEENSBG",
@@ -1750,7 +1749,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     KERSEY = Municipality(
         name="Kersey",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="KRS",
             five_letter="KERSY",
             seven_letter="KERSEY",
@@ -1763,7 +1762,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     KEYSTONE = Municipality(
         name="Keystone",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="KYS",
             five_letter="KEYST",
             seven_letter="KEYSTN",
@@ -1776,7 +1775,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     KIM = Municipality(
         name="Kim",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="KIM",
             five_letter="KIM",
             seven_letter="KIM",
@@ -1789,7 +1788,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     KIOWA = Municipality(
         name="Kiowa",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="KIW",
             five_letter="KIOWA",
             seven_letter="KIOWA",
@@ -1802,7 +1801,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     KIT_CARSON = Municipality(
         name="Kit Carson",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="KIT",
             five_letter="KITCR",
             seven_letter="KITCRSN",
@@ -1815,7 +1814,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     KREMMLING = Municipality(
         name="Kremmling",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="KRM",
             five_letter="KRMML",
             seven_letter="KRMMLNG",
@@ -1828,7 +1827,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     LA_JARA = Municipality(
         name="La Jara",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LJR",
             five_letter="LAJRA",
             seven_letter="LAJARA",
@@ -1841,7 +1840,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     LA_JUNTA = Municipality(
         name="La Junta",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LJT",
             five_letter="LAJUN",
             seven_letter="LAJUNTA",
@@ -1854,7 +1853,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     LA_VETA = Municipality(
         name="La Veta",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LVT",
             five_letter="LAVTA",
             seven_letter="LAVETA",
@@ -1867,7 +1866,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     LAFAYETTE = Municipality(
         name="Lafayette",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LAF",
             five_letter="LFYTE",
             seven_letter="LFAYTE",
@@ -1880,7 +1879,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     LAKE_CITY = Municipality(
         name="Lake City",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LKC",
             five_letter="LKCTY",
             seven_letter="LKCITY",
@@ -1893,7 +1892,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     LAKESIDE = Municipality(
         name="Lakeside",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LKS",
             five_letter="LAKSD",
             seven_letter="LAKSIDE",
@@ -1906,7 +1905,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     LAKEWOOD = Municipality(
         name="Lakewood",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LKW",
             five_letter="LAKWD",
             seven_letter="LKWOOD",
@@ -1919,7 +1918,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     LAMAR = Municipality(
         name="Lamar",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LMR",
             five_letter="LAMAR",
             seven_letter="LAMAR",
@@ -1932,7 +1931,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     LARKSPUR = Municipality(
         name="Larkspur",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LRK",
             five_letter="LRKSP",
             seven_letter="LRKSPR",
@@ -1945,7 +1944,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     LAS_ANIMAS = Municipality(
         name="Las Animas",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LAS",
             five_letter="LSANM",
             seven_letter="LSANMAS",
@@ -1958,7 +1957,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     LASALLE = Municipality(
         name="LaSalle",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LSL",
             five_letter="LASLL",
             seven_letter="LASALLE",
@@ -1971,7 +1970,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     LEADVILLE = Municipality(
         name="Leadville",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LDV",
             five_letter="LEADV",
             seven_letter="LEADVLL",
@@ -1984,7 +1983,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     LIMON = Municipality(
         name="Limon",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LMN",
             five_letter="LIMON",
             seven_letter="LIMON",
@@ -1997,7 +1996,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     LITTLETON = Municipality(
         name="Littleton",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LIT",
             five_letter="LTTN",
             seven_letter="LTTN",
@@ -2010,7 +2009,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     LOCHBUIE = Municipality(
         name="Lochbuie",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LCB",
             five_letter="LOCHB",
             seven_letter="LOCHBUI",
@@ -2023,7 +2022,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     LOG_LANE_VILLAGE = Municipality(
         name="Log Lane Village",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LLV",
             five_letter="LOGLV",
             seven_letter="LOGLNVL",
@@ -2036,7 +2035,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     LONE_TREE = Municipality(
         name="Lone Tree",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LNT",
             five_letter="LNTRE",
             seven_letter="LNTREE",
@@ -2049,7 +2048,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     LONGMONT = Municipality(
         name="Longmont",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LGM",
             five_letter="LONGM",
             seven_letter="LONGMT",
@@ -2062,7 +2061,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     LOUISVILLE = Municipality(
         name="Louisville",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LOU",
             five_letter="LSVL",
             seven_letter="LSVL",
@@ -2075,7 +2074,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     LOVELAND = Municipality(
         name="Loveland",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LOV",
             five_letter="LOVE",
             seven_letter="LOVELD",
@@ -2088,7 +2087,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     LYONS = Municipality(
         name="Lyons",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LYO",
             five_letter="LYONS",
             seven_letter="LYONS",
@@ -2101,7 +2100,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     MANASSA = Municipality(
         name="Manassa",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MNS",
             five_letter="MANSS",
             seven_letter="MANASSA",
@@ -2114,7 +2113,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     MANCOS = Municipality(
         name="Mancos",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MNC",
             five_letter="MANC",
             seven_letter="MANCOS",
@@ -2127,7 +2126,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     MANITOU_SPRINGS = Municipality(
         name="Manitou Springs",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MNS",
             five_letter="MSPRG",
             seven_letter="MNSPRGS",
@@ -2140,7 +2139,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     MANZANOLA = Municipality(
         name="Manzanola",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MZL",
             five_letter="MZLNA",
             seven_letter="MANZANL",
@@ -2153,7 +2152,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     MARBLE = Municipality(
         name="Marble",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MRB",
             five_letter="MARBL",
             seven_letter="MARBLE",
@@ -2166,7 +2165,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     MEAD = Municipality(
         name="Mead",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MED",
             five_letter="MEAD",
             seven_letter="MEAD",
@@ -2179,7 +2178,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     MEEKER = Municipality(
         name="Meeker",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MKR",
             five_letter="MEEKR",
             seven_letter="MEEKER",
@@ -2192,7 +2191,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     MERINO = Municipality(
         name="Merino",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MRN",
             five_letter="MRINO",
             seven_letter="MERINO",
@@ -2205,7 +2204,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     MILLIKEN = Municipality(
         name="Milliken",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MLK",
             five_letter="MILKN",
             seven_letter="MLLIKEN",
@@ -2218,7 +2217,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     MINTURN = Municipality(
         name="Minturn",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MTR",
             five_letter="MNTUR",
             seven_letter="MINTURN",
@@ -2231,7 +2230,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     MOFFAT = Municipality(
         name="Moffat",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MOF",
             five_letter="MFFT",
             seven_letter="MOFFAT",
@@ -2244,7 +2243,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     MONTE_VISTA = Municipality(
         name="Monte Vista",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MTV",
             five_letter="MNVST",
             seven_letter="MNVISTA",
@@ -2257,7 +2256,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     MONTEZUMA = Municipality(
         name="Montezuma",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MTZ",
             five_letter="MNZMA",
             seven_letter="MNTZUMA",
@@ -2270,7 +2269,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     MONTROSE = Municipality(
         name="Montrose",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MTR",
             five_letter="MNTRO",
             seven_letter="MONTRSE",
@@ -2283,7 +2282,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     MONUMENT = Municipality(
         name="Monument",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MNM",
             five_letter="MNMT",
             seven_letter="MONUMT",
@@ -2296,7 +2295,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     MORRISON = Municipality(
         name="Morrison",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MRN",
             five_letter="MORRN",
             seven_letter="MORRSON",
@@ -2309,7 +2308,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     MOUNT_CRESTED_BUTTE = Municipality(
         name="Mount Crested Butte",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MCB",
             five_letter="MTCB",
             seven_letter="MTCSTBT",
@@ -2322,7 +2321,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     MOUNTAIN_VIEW = Municipality(
         name="Mountain View",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MVW",
             five_letter="MTNVW",
             seven_letter="MTNVIEW",
@@ -2335,7 +2334,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     MOUNTAIN_VILLAGE = Municipality(
         name="Mountain Village",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MVL",
             five_letter="MTNVL",
             seven_letter="MTNVILL",
@@ -2348,7 +2347,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     NATURITA = Municipality(
         name="Naturita",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="NAT",
             five_letter="NATUR",
             seven_letter="NATURT",
@@ -2361,7 +2360,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     NEDERLAND = Municipality(
         name="Nederland",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="NED",
             five_letter="NEDER",
             seven_letter="NEDERL",
@@ -2374,7 +2373,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     NEW_CASTLE = Municipality(
         name="New Castle",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="NWC",
             five_letter="NEWCL",
             seven_letter="NEWCSTL",
@@ -2387,7 +2386,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     NORTHGLENN = Municipality(
         name="Northglenn",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="NGL",
             five_letter="NGLEN",
             seven_letter="NGLENN",
@@ -2400,7 +2399,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     NORWOOD = Municipality(
         name="Norwood",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="NRW",
             five_letter="NORWD",
             seven_letter="NORWOOD",
@@ -2413,7 +2412,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     NUCLA = Municipality(
         name="Nucla",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="NUC",
             five_letter="NUCLA",
             seven_letter="NUCLA",
@@ -2426,7 +2425,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     NUNN = Municipality(
         name="Nunn",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="NUN",
             five_letter="NUNN",
             seven_letter="NUNN",
@@ -2439,7 +2438,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     OAK_CREEK = Municipality(
         name="Oak Creek",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="OKC",
             five_letter="OAKCR",
             seven_letter="OAKCRK",
@@ -2452,7 +2451,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     OLATHE = Municipality(
         name="Olathe",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="OLT",
             five_letter="OLATH",
             seven_letter="OLATHE",
@@ -2465,7 +2464,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     OLNEY_SPRINGS = Municipality(
         name="Olney Springs",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="OLS",
             five_letter="OLNSP",
             seven_letter="OLNSPRG",
@@ -2478,7 +2477,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     OPHIR = Municipality(
         name="Ophir",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="OPH",
             five_letter="OPHIR",
             seven_letter="OPHIR",
@@ -2491,7 +2490,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     ORCHARD_CITY = Municipality(
         name="Orchard City",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="ORC",
             five_letter="ORCHD",
             seven_letter="ORCHCTY",
@@ -2504,7 +2503,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     ORDWAY = Municipality(
         name="Ordway",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="ORD",
             five_letter="ORDWY",
             seven_letter="ORDWAY",
@@ -2517,7 +2516,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     OTIS = Municipality(
         name="Otis",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="OTI",
             five_letter="OTIS",
             seven_letter="OTIS",
@@ -2530,7 +2529,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     OURAY = Municipality(
         name="Ouray",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="OUR",
             five_letter="OURAY",
             seven_letter="OURAY",
@@ -2543,7 +2542,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     OVID = Municipality(
         name="Ovid",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="OVI",
             five_letter="OVID",
             seven_letter="OVID",
@@ -2556,7 +2555,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     PAGOSA_SPRINGS = Municipality(
         name="Pagosa Springs",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="PGS",
             five_letter="PGSAS",
             seven_letter="PAGOSAS",
@@ -2569,7 +2568,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     PALISADE = Municipality(
         name="Palisade",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="PLS",
             five_letter="PALIS",
             seven_letter="PALISD",
@@ -2582,7 +2581,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     PALMER_LAKE = Municipality(
         name="Palmer Lake",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="PML",
             five_letter="PALML",
             seven_letter="PALMLK",
@@ -2595,7 +2594,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     PAOLI = Municipality(
         name="Paoli",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="PLI",
             five_letter="PAOLI",
             seven_letter="PAOLI",
@@ -2608,7 +2607,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     PAONIA = Municipality(
         name="Paonia",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="PAN",
             five_letter="PAONI",
             seven_letter="PAONIA",
@@ -2621,7 +2620,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     PARACHUTE = Municipality(
         name="Parachute",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="PRC",
             five_letter="PRCHT",
             seven_letter="PRCHUTE",
@@ -2634,7 +2633,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     PARKER = Municipality(
         name="Parker",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="PRK",
             five_letter="PARKR",
             seven_letter="PARKER",
@@ -2647,7 +2646,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     PEETZ = Municipality(
         name="Peetz",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="PTZ",
             five_letter="PEETZ",
             seven_letter="PEETZ",
@@ -2660,7 +2659,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     PIERCE = Municipality(
         name="Pierce",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="PIR",
             five_letter="PIERC",
             seven_letter="PIERCE",
@@ -2673,7 +2672,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     PITKIN = Municipality(
         name="Pitkin",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="PIT",
             five_letter="PITKN",
             seven_letter="PITKIN",
@@ -2686,7 +2685,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     PLATTEVILLE = Municipality(
         name="Platteville",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="PLV",
             five_letter="PLTVL",
             seven_letter="PLTVLE",
@@ -2699,7 +2698,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     PONCHA_SPRINGS = Municipality(
         name="Poncha Springs",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="PCS",
             five_letter="PCHAS",
             seven_letter="PONCHAS",
@@ -2712,7 +2711,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     PRITCHETT = Municipality(
         name="Pritchett",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="PRT",
             five_letter="PRTCH",
             seven_letter="PRITCTT",
@@ -2725,7 +2724,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     PUEBLO = Municipality(
         name="Pueblo",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="PUB",
             five_letter="PUEBL",
             seven_letter="PUEBLO",
@@ -2738,7 +2737,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     RAMAH = Municipality(
         name="Ramah",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="RMA",
             five_letter="RAMAH",
             seven_letter="RAMAH",
@@ -2751,7 +2750,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     RANGELY = Municipality(
         name="Rangely",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="RAN",
             five_letter="RANGL",
             seven_letter="RANGLY",
@@ -2764,7 +2763,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     RAYMER = Municipality(
         name="Raymer",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="RYM",
             five_letter="RAYMR",
             seven_letter="RAYMER",
@@ -2777,7 +2776,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     RED_CLIFF = Municipality(
         name="Red Cliff",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="RCL",
             five_letter="RCLIF",
             seven_letter="REDCLFF",
@@ -2790,7 +2789,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     RICO = Municipality(
         name="Rico",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="RIC",
             five_letter="RICO",
             seven_letter="RICO",
@@ -2803,7 +2802,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     RIDGWAY = Municipality(
         name="Ridgway",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="RDG",
             five_letter="RIDGW",
             seven_letter="RIDGWAY",
@@ -2816,7 +2815,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     RIFLE = Municipality(
         name="Rifle",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="RIF",
             five_letter="RIFLE",
             seven_letter="RIFLE",
@@ -2829,7 +2828,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     ROCKVALE = Municipality(
         name="Rockvale",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="RKV",
             five_letter="ROCKV",
             seven_letter="ROCKVL",
@@ -2842,7 +2841,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     ROCKY_FORD = Municipality(
         name="Rocky Ford",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="RKF",
             five_letter="ROCKF",
             seven_letter="ROCKYFD",
@@ -2855,7 +2854,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     ROMEO = Municipality(
         name="Romeo",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="RMO",
             five_letter="ROMEO",
             seven_letter="ROMEO",
@@ -2868,7 +2867,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     RYE = Municipality(
         name="Rye",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="RYE",
             five_letter="RYE",
             seven_letter="RYE",
@@ -2881,7 +2880,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     SAGUACHE = Municipality(
         name="Saguache",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SGC",
             five_letter="SAGCH",
             seven_letter="SAGCHE",
@@ -2894,7 +2893,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     SALIDA = Municipality(
         name="Salida",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SLD",
             five_letter="SALID",
             seven_letter="SALIDA",
@@ -2907,7 +2906,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     SAN_LUIS = Municipality(
         name="San Luis",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SLS",
             five_letter="SLUIS",
             seven_letter="SANLUIS",
@@ -2920,7 +2919,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     SANFORD = Municipality(
         name="Sanford",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SFD",
             five_letter="SFORD",
             seven_letter="SANFORD",
@@ -2933,7 +2932,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     SAWPIT = Municipality(
         name="Sawpit",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SAW",
             five_letter="SAWPT",
             seven_letter="SAWPIT",
@@ -2946,7 +2945,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     SEDGWICK = Municipality(
         name="Sedgwick",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SDW",
             five_letter="SEDGW",
             seven_letter="SEDGWCK",
@@ -2959,7 +2958,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     SEIBERT = Municipality(
         name="Seibert",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SBT",
             five_letter="SBERT",
             seven_letter="SEIBERT",
@@ -2972,7 +2971,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     SEVERANCE = Municipality(
         name="Severance",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SVR",
             five_letter="SEVRN",
             seven_letter="SEVRNC",
@@ -2985,7 +2984,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     SHERIDAN = Municipality(
         name="Sheridan",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SHR",
             five_letter="SHERD",
             seven_letter="SHERID",
@@ -2998,7 +2997,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     SHERIDAN_LAKE = Municipality(
         name="Sheridan Lake",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SHL",
             five_letter="SHERL",
             seven_letter="SHERLK",
@@ -3011,7 +3010,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     SILT = Municipality(
         name="Silt",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SLT",
             five_letter="SILT",
             seven_letter="SILT",
@@ -3024,7 +3023,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     SILVER_CLIFF = Municipality(
         name="Silver Cliff",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SVC",
             five_letter="SVCLF",
             seven_letter="SVCLFF",
@@ -3037,7 +3036,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     SILVER_PLUME = Municipality(
         name="Silver Plume",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SVP",
             five_letter="SVPLM",
             seven_letter="SVPLME",
@@ -3050,7 +3049,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     SILVERTHORNE = Municipality(
         name="Silverthorne",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SVT",
             five_letter="SVTHR",
             seven_letter="SVTHRN",
@@ -3063,7 +3062,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     SILVERTON = Municipality(
         name="Silverton",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SVN",
             five_letter="SVLVT",
             seven_letter="SVLTON",
@@ -3076,7 +3075,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     SILMA = Municipality(
         name="Simla",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SIL",
             five_letter="SILMA",
             seven_letter="SILMA",
@@ -3089,7 +3088,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     SNOWMASS_VILLAGE = Municipality(
         name="Snowmass Village",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SMV",
             five_letter="SNMVS",
             seven_letter="SNMVLLG",
@@ -3102,7 +3101,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     SOUTH_FORK = Municipality(
         name="South Fork",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SFK",
             five_letter="SFORK",
             seven_letter="SOUTHFK",
@@ -3115,7 +3114,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     SPRINGFIELD = Municipality(
         name="Springfield",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SPF",
             five_letter="SPRGF",
             seven_letter="SPRGFD",
@@ -3128,7 +3127,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     STARKVILLE = Municipality(
         name="Starkville",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SKV",
             five_letter="STARK",
             seven_letter="STARKVL",
@@ -3141,7 +3140,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     STEAMBOAT_SPRINGS = Municipality(
         name="Steamboat Springs",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="STB",
             five_letter="STEAM",
             seven_letter="STMBOAT",
@@ -3154,7 +3153,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     STERLING = Municipality(
         name="Sterling",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="STL",
             five_letter="STERL",
             seven_letter="STERLN",
@@ -3167,7 +3166,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     STRATTON = Municipality(
         name="Stratton",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="STT",
             five_letter="STRAT",
             seven_letter="STRATN",
@@ -3180,7 +3179,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     SUGAR_CITY = Municipality(
         name="Sugar City",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SGC",
             five_letter="SUGAR",
             seven_letter="SGRCITY",
@@ -3193,7 +3192,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     SUPERIOR = Municipality(
         name="Superior",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SUP",
             five_letter="SUPER",
             seven_letter="SUPRIOR",
@@ -3206,7 +3205,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     SWINK = Municipality(
         name="Swink",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SWK",
             five_letter="SWINK",
             seven_letter="SWINK",
@@ -3219,7 +3218,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     TELLURIDE = Municipality(
         name="Telluride",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="TEL",
             five_letter="TELLR",
             seven_letter="TELLUR",
@@ -3232,7 +3231,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     THORNTON = Municipality(
         name="Thornton",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="THO",
             five_letter="THRTN",
             seven_letter="THRTON",
@@ -3245,7 +3244,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     TIMNATH = Municipality(
         name="Timnath",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="TIM",
             five_letter="TIMNT",
             seven_letter="TIMNATH",
@@ -3258,7 +3257,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     TRINIDAD = Municipality(
         name="Trinidad",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="TRI",
             five_letter="TRIND",
             seven_letter="TRINDD",
@@ -3271,7 +3270,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     TWO_BUTTES = Municipality(
         name="Two Buttes",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="TWB",
             five_letter="TWOBT",
             seven_letter="TWOBTTE",
@@ -3284,7 +3283,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     VAIL = Municipality(
         name="Vail",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="VAI",
             five_letter="VAIL",
             seven_letter="VAIL",
@@ -3297,7 +3296,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     VICTOR = Municipality(
         name="Victor",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="VIC",
             five_letter="VICTR",
             seven_letter="VICTOR",
@@ -3310,7 +3309,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     VILAS = Municipality(
         name="Vilas",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="VLS",
             five_letter="VILAS",
             seven_letter="VILAS",
@@ -3323,7 +3322,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     VONA = Municipality(
         name="Vona",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="VON",
             five_letter="VONA",
             seven_letter="VONA",
@@ -3336,7 +3335,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     WALDEN = Municipality(
         name="Walden",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="WLD",
             five_letter="WALDN",
             seven_letter="WALDEN",
@@ -3349,7 +3348,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     WALSENBURG = Municipality(
         name="Walsenburg",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="WLB",
             five_letter="WALSN",
             seven_letter="WALSNB",
@@ -3362,7 +3361,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     WALSH = Municipality(
         name="Walsh",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="WLS",
             five_letter="WALSH",
             seven_letter="WALSH",
@@ -3375,7 +3374,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     WARD = Municipality(
         name="Ward",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="WRD",
             five_letter="WARD",
             seven_letter="WARD",
@@ -3388,7 +3387,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     WELLINGTON = Municipality(
         name="Wellington",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="WEL",
             five_letter="WELLN",
             seven_letter="WELLGTN",
@@ -3401,7 +3400,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     WESTCLIFFE = Municipality(
         name="Westcliffe",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="WCL",
             five_letter="WCLFF",
             seven_letter="WESTCLF",
@@ -3414,7 +3413,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     WESTMINSTER = Municipality(
         name="Westminster",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="WMS",
             five_letter="WSTMR",
             seven_letter="WSTMNR",
@@ -3427,7 +3426,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     WHEAT_RIDGE = Municipality(
         name="Wheat Ridge",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="WHR",
             five_letter="WHTRG",
             seven_letter="WHTRDGE",
@@ -3440,7 +3439,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     WIGGINS = Municipality(
         name="Wiggins",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="WIG",
             five_letter="WGGNS",
             seven_letter="WIGGINS",
@@ -3453,7 +3452,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     WILEY = Municipality(
         name="Wiley",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="WLY",
             five_letter="WILEY",
             seven_letter="WILEY",
@@ -3466,7 +3465,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     WILLIAMSBURG = Municipality(
         name="Williamsburg",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="WSB",
             five_letter="WMSBG",
             seven_letter="WILLMBG",
@@ -3479,7 +3478,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     WINDSOR = Municipality(
         name="Windsor",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="WIN",
             five_letter="WINDS",
             seven_letter="WINDSR",
@@ -3492,7 +3491,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     WINTER_PARK = Municipality(
         name="Winter Park",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="WPK",
             five_letter="WINTP",
             seven_letter="WINTPK",
@@ -3505,7 +3504,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     WOODLAND_PARK = Municipality(
         name="Woodland Park",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="WLP",
             five_letter="WDLPK",
             seven_letter="WDLNDPK",
@@ -3518,7 +3517,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     WRAY = Municipality(
         name="Wray",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="WRA",
             five_letter="WRAY",
             seven_letter="WRAY",
@@ -3531,7 +3530,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     YAMPA = Municipality(
         name="Yampa",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="YMP",
             five_letter="YAMPA",
             seven_letter="YAMPA",
@@ -3544,7 +3543,7 @@ class Municipalities(PopulatedPlaceEnum):
     )
     YUMA = Municipality(
         name="Yuma",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="YUM",
             five_letter="YUMA",
             seven_letter="YUMA",

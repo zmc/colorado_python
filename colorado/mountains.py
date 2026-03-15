@@ -1,11 +1,12 @@
 from typing import Any
 
-from colorado.airports import Airports
-from colorado.base.geocoordinated_location import GeocoordinatedLocation, GeocoordinatedLocationEnum
-from colorado.base.named_location import NamedLocation, NamedLocationEnum, NamedLocationAbbreviations
+from colorado.base.with_abbreviations import WithAbbreviations, WithAbbreviationsEnum, Abbreviations
+from colorado.base.with_coordinates import WithCoordinates, WithCoordinatesEnum
+from colorado.base.with_name import WithName, WithNameEnum
+from colorado.base.with_nearest_airport import WithNearestAirport, WithNearestAirportEnum, Airports
 
 
-class Mountain(GeocoordinatedLocation, NamedLocation):
+class Mountain(WithName, WithAbbreviations, WithCoordinates, WithNearestAirport):
     """
     Represents a mountain in the state of Colorado.
     """
@@ -19,13 +20,13 @@ class Mountain(GeocoordinatedLocation, NamedLocation):
         super().__init__(**data)
 
 
-class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
+class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNearestAirportEnum):
     """
     An enumeration of mountains in the state of Colorado.
     """
     ANTHRACITE_RANGE_HIGH_POINT = Mountain(
         name="Anthracite Range High Point",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="ARH",
             five_letter="ARHP",
             seven_letter="ARNG-HP",
@@ -38,7 +39,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     ANTORA_PEAK = Mountain(
         name="Antora Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="ANT",
             five_letter="ANTPK",
             seven_letter="ANTR-PK",
@@ -51,7 +52,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     BALD_MOUNTAIN = Mountain(
         name="Bald Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BLD",
             five_letter="BALD",
             seven_letter="BALD-MT",
@@ -60,11 +61,11 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
         latitude=39.4448,
         longitude=-105.9705,
         height=13690.0,
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN_PITKIN
     )
     BARD_PEAK = Mountain(
         name="Bard Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BRD",
             five_letter="BARD",
             seven_letter="BARD-PK",
@@ -77,7 +78,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     BENNETT_PEAK = Mountain(
         name="Bennett Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BNT",
             five_letter="BNTPK",
             seven_letter="BNNT-PK",
@@ -90,7 +91,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     BILL_WILLIAMS_PEAK = Mountain(
         name="Bill Williams Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BWP",
             five_letter="BWMS",
             seven_letter="BWMS-PK",
@@ -99,11 +100,11 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
         latitude=39.1806,
         longitude=-106.6102,
         height=13389.0,
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     BISON_MOUNTAIN = Mountain(
         name="Bison Mountain (Bison Peak)",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BSN",
             five_letter="BISON",
             seven_letter="BSON-MT",
@@ -116,7 +117,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     BLACK_MOUNTAIN_MOFFAT_COUNTY = Mountain(
         name="Black Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BKM",
             five_letter="BKMOF",
             seven_letter="BLK-MOF",
@@ -129,7 +130,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     BLACK_MOUNTAIN_PARK_COUNTY = Mountain(
         name="Black Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BKP",
             five_letter="BKPRK",
             seven_letter="BLK-PRK",
@@ -142,7 +143,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     BLAIR_MOUNTAIN = Mountain(
         name="Blair Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BLR",
             five_letter="BLAIR",
             seven_letter="BLAR-M",
@@ -155,7 +156,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     BLANCA_PEAK = Mountain(
         name="Blanca Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BLC",
             five_letter="BLANC",
             seven_letter="BLNC-PK",
@@ -168,7 +169,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     BUSHNELL_PEAK = Mountain(
         name="Bushnell Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BSH",
             five_letter="BSHNL",
             seven_letter="BUSH-PK",
@@ -181,7 +182,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     CAPITOL_PEAK = Mountain(
         name="Capitol Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CAP",
             five_letter="CAPTL",
             seven_letter="CAPT-PK",
@@ -190,11 +191,11 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
         latitude=39.1503,
         longitude=-107.0829,
         height=14137.0,
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     CARBON_PEAK = Mountain(
         name="Carbon Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CBN",
             five_letter="CARBN",
             seven_letter="CARB-PK",
@@ -207,7 +208,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     CASTLE_PEAK = Mountain(
         name="Castle Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CST",
             five_letter="CSTL",
             seven_letter="CSTL-PK",
@@ -216,11 +217,11 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
         latitude=39.0097,
         longitude=-106.8614,
         height=14279.0,
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     CASTLE_PEAK_SAWATCH_RANGE = Mountain(
         name="Castle Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CPW",
             five_letter="CPSAW",
             seven_letter="CSTL-SW",
@@ -233,7 +234,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     CHAIR_MOUNTAIN = Mountain(
         name="Chair Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CHR",
             five_letter="CHAIR",
             seven_letter="CHAR-MT",
@@ -242,11 +243,11 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
         latitude=39.0581,
         longitude=-107.2822,
         height=12727.0,
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     CHALK_BENCHMARK = Mountain(
         name="Chalk Benchmark",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CHK",
             five_letter="CHALK",
             seven_letter="CHLK-BM",
@@ -259,7 +260,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     CLARK_PEAK = Mountain(
         name="Clark Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CLK",
             five_letter="CLARK",
             seven_letter="CLRK-PK",
@@ -272,7 +273,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     COAL_MOUNTAIN = Mountain(
         name="Coal Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="COL",
             five_letter="COAL",
             seven_letter="COAL-MT",
@@ -285,7 +286,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     COCHETOPA_DOME = Mountain(
         name="Cochetopa Dome",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CCH",
             five_letter="CCHTP",
             seven_letter="CHTP-DM",
@@ -298,7 +299,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     COLUMBUS_MOUNTAIN = Mountain(
         name="Columbus Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CLB",
             five_letter="CLMBS",
             seven_letter="CLMB-MT",
@@ -311,7 +312,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     CONEJOS_PEAK = Mountain(
         name="Conejos Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CNJ",
             five_letter="CONJS",
             seven_letter="CNJS-PK",
@@ -324,7 +325,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     CORNWALL_MOUNTAIN = Mountain(
         name="Cornwall Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CNW",
             five_letter="CRNWL",
             seven_letter="CWAL-MT",
@@ -337,7 +338,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     CRATER_PEAK = Mountain(
         name="Crater Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CRT",
             five_letter="CRATR",
             seven_letter="CRTR-PK",
@@ -350,7 +351,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     CRESTED_BUTTE = Mountain(
         name="Crested Butte",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CRB",
             five_letter="CSTBT",
             seven_letter="CRST-BT",
@@ -359,11 +360,11 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
         latitude=38.8835,
         longitude=-106.9436,
         height=12168.0,
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     CRESTONE_PEAK = Mountain(
         name="Crestone Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CRS",
             five_letter="CRSTN",
             seven_letter="CRST-PK",
@@ -376,7 +377,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     CULEBRA_PEAK = Mountain(
         name="Culebra Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CUL",
             five_letter="CULBR",
             seven_letter="CULB-PK",
@@ -389,7 +390,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     EAST_BECKWITH_MOUNTAIN = Mountain(
         name="East Beckwith Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="EBK",
             five_letter="EBECK",
             seven_letter="EBK-MTN",
@@ -402,7 +403,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     EAST_SPANISH_PEAK = Mountain(
         name="East Spanish Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="ESP",
             five_letter="ESPAN",
             seven_letter="ESP-PK",
@@ -415,7 +416,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     ELK_MOUNTAIN = Mountain(
         name="Elk Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="ELK",
             five_letter="ELKMT",
             seven_letter="ELK-MTN",
@@ -428,7 +429,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     ELLIOTT_MOUNTAIN = Mountain(
         name="Elliott Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="ELL",
             five_letter="ELLIT",
             seven_letter="ELLT-MT",
@@ -441,7 +442,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     FLAT_TOP_MOUNTAIN = Mountain(
         name="Flat Top Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="FLT",
             five_letter="FLTTP",
             seven_letter="FLATTOP",
@@ -454,7 +455,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     GOTHIC_MOUNTAIN = Mountain(
         name="Gothic Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GTH",
             five_letter="GOTH",
             seven_letter="GOTH-MT",
@@ -463,11 +464,11 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
         latitude=38.9562,
         longitude=-107.0107,
         height=12631.0,
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     GRAHAM_PEAK = Mountain(
         name="Graham Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GRH",
             five_letter="GRHAM",
             seven_letter="GRHM-PK",
@@ -480,7 +481,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     GRAYS_PEAK = Mountain(
         name="Grays Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GRY",
             five_letter="GRAYS",
             seven_letter="GRYS-PK",
@@ -493,7 +494,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     GREEN_MOUNTAIN = Mountain(
         name="Green Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GRN",
             five_letter="GREEN",
             seven_letter="GREN-MT",
@@ -506,7 +507,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     GREENHORN_MOUNTAIN = Mountain(
         name="Greenhorn Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GHN",
             five_letter="GRNHN",
             seven_letter="GRNH-MT",
@@ -519,7 +520,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     GRIZZLY_PEAK = Mountain(
         name="Grizzly Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GRZ",
             five_letter="GRZLY",
             seven_letter="GRZL-PK",
@@ -528,11 +529,11 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
         latitude=39.0425,
         longitude=-106.5976,
         height=13995.0,
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     HAGUES_PEAK = Mountain(
         name="Hagues Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="HAG",
             five_letter="HAGUE",
             seven_letter="HAGS-PK",
@@ -545,7 +546,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     HANDIES_PEAK = Mountain(
         name="Handies Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="HND",
             five_letter="HANDS",
             seven_letter="HNDS-PK",
@@ -558,7 +559,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     HARDSCRABBLE_MOUNTAIN = Mountain(
         name="Hardscrabble Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="HDS",
             five_letter="HDSCB",
             seven_letter="HDSC-MT",
@@ -571,7 +572,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     HENRY_MOUNTAIN = Mountain(
         name="Henry Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="HNR",
             five_letter="HENRY",
             seven_letter="HNRY-MT",
@@ -584,7 +585,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     HESPERUS_MOUNTAIN = Mountain(
         name="Hesperus Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="HSP",
             five_letter="HSPRS",
             seven_letter="HSPR-MT",
@@ -597,7 +598,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     HORSE_MOUNTAIN = Mountain(
         name="Horse Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="HRS",
             five_letter="HORSE",
             seven_letter="HORS-MT",
@@ -610,7 +611,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     HUNTSMAN_RIDGE_PEAK_DUTCH_PEAK = Mountain(
         name="Huntsman Ridge Peak (Dutch Peak)",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="HNT",
             five_letter="HNTRG",
             seven_letter="HTMR-PK",
@@ -619,11 +620,11 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
         latitude=39.192,
         longitude=-107.3668,
         height=11858.0,
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     IRON_MOUNTAIN = Mountain(
         name="Iron Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="IRN",
             five_letter="IRON",
             seven_letter="IRON-MT",
@@ -636,7 +637,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     JACQUE_PEAK = Mountain(
         name="Jacque Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="JAC",
             five_letter="JACQ",
             seven_letter="JACQ-PK",
@@ -645,11 +646,11 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
         latitude=39.4549,
         longitude=-106.197,
         height=13211.0,
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     KNOBBY_CREST = Mountain(
         name="Knobby Crest",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="KNB",
             five_letter="KNOBY",
             seven_letter="KNBY-CR",
@@ -662,7 +663,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     LA_PLATA_PEAK = Mountain(
         name="La Plata Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LPL",
             five_letter="LPLAT",
             seven_letter="LAPL-PK",
@@ -671,11 +672,11 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
         latitude=39.0294,
         longitude=-106.4729,
         height=14343.0,
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     LARAMIE_MOUNTAINS_HP = Mountain(
         name="Laramie Mountains HP",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LAR",
             five_letter="LARMI",
             seven_letter="LARM-HP",
@@ -688,7 +689,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     LITTLE_CONE = Mountain(
         name="Little Cone",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LTC",
             five_letter="LTCON",
             seven_letter="LTL-CNE",
@@ -701,7 +702,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     LONE_CONE = Mountain(
         name="Lone Cone",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LON",
             five_letter="LOCON",
             seven_letter="LNE-CNE",
@@ -714,7 +715,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     LONGS_PEAK = Mountain(
         name="Longs Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LNG",
             five_letter="LONGS",
             seven_letter="LNGS-PK",
@@ -727,7 +728,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     MARCELLINA_MOUNTAIN = Mountain(
         name="Marcellina Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MRC",
             five_letter="MRCEL",
             seven_letter="MRCL-MT",
@@ -736,11 +737,11 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
         latitude=38.9299,
         longitude=-107.2438,
         height=11353.0,
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     MAROON_PEAK = Mountain(
         name="Maroon Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MRN",
             five_letter="MROON",
             seven_letter="MRON-PK",
@@ -749,11 +750,11 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
         latitude=39.0708,
         longitude=-106.989,
         height=14163.0,
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     MATCHLESS_MOUNTAIN = Mountain(
         name="Matchless Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MCH",
             five_letter="MTLES",
             seven_letter="MTCL-MT",
@@ -766,7 +767,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     MIDDLE_PEAK = Mountain(
         name="Middle Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MID",
             five_letter="MIDDL",
             seven_letter="MID-PK",
@@ -779,7 +780,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     MOUNT_ANTERO = Mountain(
         name="Mount Antero",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="ATR",
             five_letter="ANTRO",
             seven_letter="MT-ANTR",
@@ -792,7 +793,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     MOUNT_BLUE_SKY = Mountain(
         name="Mount Blue Sky",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BLS",
             five_letter="BLSKY",
             seven_letter="MT-BLSK",
@@ -805,7 +806,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     MOUNT_CENTENNIAL = Mountain(
         name="Mount Centennial (Peak 13010)",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CTL",
             five_letter="CENTL",
             seven_letter="MT-CNTL",
@@ -818,7 +819,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     MOUNT_ELBERT = Mountain(
         name="Mount Elbert",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LBT",
             five_letter="ELBRT",
             seven_letter="MT-ELBT",
@@ -827,11 +828,11 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
         latitude=39.1178,
         longitude=-106.4454,
         height=14440.0,
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     MOUNT_GUERO = Mountain(
         name="Mount Guero",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GRO",
             five_letter="GUERO",
             seven_letter="MT-GURO",
@@ -844,7 +845,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     MOUNT_GUNNISON = Mountain(
         name="Mount Gunnison",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GUN",
             five_letter="GUNN",
             seven_letter="MT-GUNN",
@@ -857,7 +858,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     MOUNT_HARVARD = Mountain(
         name="Mount Harvard",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="HRV",
             five_letter="HARVD",
             seven_letter="MT-HVRD",
@@ -866,11 +867,11 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
         latitude=38.9244,
         longitude=-106.3207,
         height=14421.0,
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     MOUNT_HERARD = Mountain(
         name="Mount Herard",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="HRD",
             five_letter="HERAD",
             seven_letter="MT-HERD",
@@ -883,7 +884,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     MOUNT_JACKSON = Mountain(
         name="Mount Jackson",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="JKS",
             five_letter="JKSON",
             seven_letter="MT-JKSN",
@@ -896,7 +897,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     MOUNT_LINCOLN = Mountain(
         name="Mount Lincoln",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LCN",
             five_letter="LNCLN",
             seven_letter="MT-LNCN",
@@ -905,11 +906,11 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
         latitude=39.3515,
         longitude=-106.1116,
         height=14293.0,
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     MOUNT_MASSIVE = Mountain(
         name="Mount Massive",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MSV",
             five_letter="MSSIV",
             seven_letter="MT-MSVE",
@@ -918,11 +919,11 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
         latitude=39.1875,
         longitude=-106.4757,
         height=14428.0,
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     MOUNT_MESTAS = Mountain(
         name="Mount Mestas",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MST",
             five_letter="MSTAS",
             seven_letter="MT-MSTS",
@@ -935,7 +936,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     MOUNT_OSO = Mountain(
         name="Mount Oso",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="OSO",
             five_letter="OSO",
             seven_letter="MT-OSO",
@@ -948,7 +949,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     MOUNT_OURAY = Mountain(
         name="Mount Ouray",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="OUR",
             five_letter="OURAY",
             seven_letter="MT-OURY",
@@ -961,7 +962,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     MOUNT_POWELL = Mountain(
         name="Mount Powell",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="PWL",
             five_letter="POWLL",
             seven_letter="MT-PWLL",
@@ -974,7 +975,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     MOUNT_PRINCETON = Mountain(
         name="Mount Princeton",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="PRC",
             five_letter="PRINC",
             seven_letter="MT-PRCN",
@@ -987,7 +988,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     MOUNT_RICHTHOFEN = Mountain(
         name="Mount Richthofen",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="RTF",
             five_letter="RCTFN",
             seven_letter="MT-RCHT",
@@ -1000,7 +1001,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     MOUNT_SILVERHEELS = Mountain(
         name="Mount Silverheels",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SVH",
             five_letter="SLVHL",
             seven_letter="MT-SLVH",
@@ -1009,11 +1010,11 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
         latitude=39.3394,
         longitude=-106.0054,
         height=13829.0,
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     MOUNT_SNEFFELS = Mountain(
         name="Mount Sneffels",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SNF",
             five_letter="SNFLS",
             seven_letter="MT-SNFF",
@@ -1026,7 +1027,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     MOUNT_WILSON = Mountain(
         name="Mount Wilson",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="WIL",
             five_letter="WILSN",
             seven_letter="MT-WLSN",
@@ -1039,7 +1040,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     MOUNT_YALE = Mountain(
         name="Mount Yale",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="YAL",
             five_letter="YALE",
             seven_letter="MT-YALE",
@@ -1048,11 +1049,11 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
         latitude=38.8442,
         longitude=-106.3138,
         height=14200.0,
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     MOUNT_ZIRKEL = Mountain(
         name="Mount Zirkel",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="ZRK",
             five_letter="ZIRKL",
             seven_letter="MT-ZRKL",
@@ -1065,7 +1066,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     MOUNT_ZWISCHEN = Mountain(
         name="Mount Zwischen",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="ZWC",
             five_letter="ZWISC",
             seven_letter="MT-ZWSN",
@@ -1078,7 +1079,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     MOUNT_OF_THE_HOLY_CROSS = Mountain(
         name="Mount of the Holy Cross",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="HCR",
             five_letter="HLYCR",
             seven_letter="MT-HLCR",
@@ -1087,11 +1088,11 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
         latitude=39.4668,
         longitude=-106.4817,
         height=14011.0,
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     NORTH_ARAPAHO_PEAK = Mountain(
         name="North Arapaho Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="NAP",
             five_letter="NAPPK",
             seven_letter="NARP-PK",
@@ -1104,7 +1105,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     NORTH_MAMM_PEAK = Mountain(
         name="North Mamm Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="NMP",
             five_letter="NMMPK",
             seven_letter="NMAM-PK",
@@ -1117,7 +1118,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     PARK_CONE = Mountain(
         name="Park Cone",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="PKC",
             five_letter="PKCON",
             seven_letter="PRK-CNE",
@@ -1130,7 +1131,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     PARKVIEW_MOUNTAIN = Mountain(
         name="Parkview Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="PKV",
             five_letter="PARKV",
             seven_letter="PKVIEW",
@@ -1143,7 +1144,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     PARRY_PEAK = Mountain(
         name="Parry Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="PRY",
             five_letter="PARRY",
             seven_letter="PRRY-PK",
@@ -1156,7 +1157,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     PIKES_PEAK = Mountain(
         name="Pikes Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="PIK",
             five_letter="PIKES",
             seven_letter="PIKE-PK",
@@ -1169,7 +1170,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     PUMA_PEAK = Mountain(
         name="Puma Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="PUM",
             five_letter="PUMA",
             seven_letter="PUMA-PK",
@@ -1182,7 +1183,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     RED_TABLE_MOUNTAIN = Mountain(
         name="Red Table Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="RTB",
             five_letter="REDTB",
             seven_letter="RTBL-MT",
@@ -1191,11 +1192,11 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
         latitude=39.4181,
         longitude=-106.7712,
         height=12043.0,
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     RIO_GRANDE_PYRAMID = Mountain(
         name="Rio Grande Pyramid",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="RGP",
             five_letter="RGPYR",
             seven_letter="RIOG-PY",
@@ -1208,7 +1209,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     SAN_LUIS_PEAK = Mountain(
         name="San Luis Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SLP",
             five_letter="SLUIS",
             seven_letter="SANL-PK",
@@ -1221,7 +1222,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     SAND_MOUNTAIN_NORTH = Mountain(
         name="Sand Mountain North",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SDN",
             five_letter="SANDN",
             seven_letter="SNDMT-N",
@@ -1234,7 +1235,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     SAWTOOTH_MOUNTAIN = Mountain(
         name="Sawtooth Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SWT",
             five_letter="SAWTH",
             seven_letter="SAWT-MT",
@@ -1247,7 +1248,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     SHEEP_MOUNTAIN = Mountain(
         name="Sheep Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SHP",
             five_letter="SHEEP",
             seven_letter="SHEP-MT",
@@ -1260,7 +1261,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     SLEEPY_CAT_PEAK = Mountain(
         name="Sleepy Cat Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SCP",
             five_letter="SLPCT",
             seven_letter="SLPY-PK",
@@ -1273,7 +1274,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     SOUTH_RIVER_PEAK = Mountain(
         name="South River Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SRP",
             five_letter="STHRV",
             seven_letter="SRIV-PK",
@@ -1286,7 +1287,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     SPECIMEN_MOUNTAIN = Mountain(
         name="Specimen Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SPC",
             five_letter="SPECM",
             seven_letter="SPCM-MT",
@@ -1299,7 +1300,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     SPRUCE_MOUNTAIN = Mountain(
         name="Spruce Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SPR",
             five_letter="SPRUC",
             seven_letter="SPRC-MT",
@@ -1308,11 +1309,11 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
         latitude=39.1973,
         longitude=-107.522,
         height=10838.0,
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     SULTAN_MOUNTAIN = Mountain(
         name="Sultan Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SLT",
             five_letter="SULTN",
             seven_letter="SLTN-MT",
@@ -1325,7 +1326,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     SUMMIT_PEAK = Mountain(
         name="Summit Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SMT",
             five_letter="SUMMT",
             seven_letter="SUMT-PK",
@@ -1338,7 +1339,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     THIRTYNINE_MILE_MOUNTAIN = Mountain(
         name="Thirtynine Mile Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="39M",
             five_letter="39MIL",
             seven_letter="39MI-MT",
@@ -1351,7 +1352,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     TOMICHI_DOME = Mountain(
         name="Tomichi Dome",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="TMC",
             five_letter="TOMCH",
             seven_letter="TMCH-DM",
@@ -1364,7 +1365,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     TOWER_MOUNTAIN = Mountain(
         name="Tower Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="TWR",
             five_letter="TOWER",
             seven_letter="TOWR-MT",
@@ -1377,7 +1378,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     TREASURE_MOUNTAIN = Mountain(
         name="Treasure Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="TRS",
             five_letter="TREAS",
             seven_letter="TRSR-MT",
@@ -1386,11 +1387,11 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
         latitude=39.0244,
         longitude=-107.1228,
         height=13535.0,
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     TWILIGHT_PEAK = Mountain(
         name="Twilight Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="TWL",
             five_letter="TWLIT",
             seven_letter="TWLT-PK",
@@ -1403,7 +1404,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     TWIN_SISTERS_PEAKS = Mountain(
         name="Twin Sisters Peaks",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="TSP",
             five_letter="TWSIS",
             seven_letter="TWIN-PK",
@@ -1416,7 +1417,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     UNCOMPAHGRE_PEAK = Mountain(
         name="Uncompahgre Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="UNC",
             five_letter="UNCPG",
             seven_letter="UNCP-PK",
@@ -1429,7 +1430,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     UTE_PEAK = Mountain(
         name="Ute Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="UTE",
             five_letter="UTE",
             seven_letter="UTE-PK",
@@ -1442,7 +1443,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     VERMILION_PEAK = Mountain(
         name="Vermilion Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="VRM",
             five_letter="VERML",
             seven_letter="VRML-PK",
@@ -1455,7 +1456,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     WAUGH_MOUNTAIN = Mountain(
         name="Waugh Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="WAU",
             five_letter="WAUGH",
             seven_letter="WAUG-MT",
@@ -1468,7 +1469,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     WEST_BUFFALO_PEAK = Mountain(
         name="West Buffalo Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="WBF",
             five_letter="WBUFF",
             seven_letter="WBUF-PK",
@@ -1477,11 +1478,11 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
         latitude=38.9917,
         longitude=-106.1249,
         height=13332.0,
-        nearest_airport=Airports.ASPEN
+        nearest_airport=Airports.ASPEN_PITKIN
     )
     WEST_ELK_PEAK = Mountain(
         name="West Elk Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="WEP",
             five_letter="WELK",
             seven_letter="WELK-PK",
@@ -1494,7 +1495,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     WEST_SPANISH_PEAK = Mountain(
         name="West Spanish Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="WSP",
             five_letter="WSPAN",
             seven_letter="WSPA-PK",
@@ -1507,7 +1508,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     WHETSTONE_MOUNTAIN = Mountain(
         name="Whetstone Mountain",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="WHT",
             five_letter="WHETS",
             seven_letter="WHTS-MT",
@@ -1520,7 +1521,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     WILLIAMS_PEAK = Mountain(
         name="Williams Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="WLL",
             five_letter="WLLMS",
             seven_letter="WLMS-PK",
@@ -1533,7 +1534,7 @@ class Mountains(GeocoordinatedLocationEnum, NamedLocationEnum):
     )
     WINDOM_PEAK = Mountain(
         name="Windom Peak",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="WND",
             five_letter="WNDOM",
             seven_letter="WNDM-PK",

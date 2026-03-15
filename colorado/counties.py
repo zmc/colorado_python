@@ -1,11 +1,13 @@
 from typing import Any
 
-from colorado.base.named_location import NamedLocation, NamedLocationEnum, NamedLocationAbbreviations
+from colorado.base.with_abbreviations import WithAbbreviations, WithAbbreviationsEnum, Abbreviations
+from colorado.base.with_name import WithName, WithNameEnum
 from colorado.license_plate_codes import LicensePlateCodes
 from colorado.zones import Zones
 
+
 # A county is a named location, but does not have a specific lat/long pair
-class County(NamedLocation):
+class County(WithName, WithAbbreviations):
     """
     Represents a county in the state of Colorado.
     """
@@ -29,13 +31,13 @@ class County(NamedLocation):
         super().__init__(**data)
 
 
-class Counties(NamedLocationEnum):
+class Counties(WithNameEnum, WithAbbreviationsEnum):
     """
     An enumeration of all counties in the state of Colorado.
     """
     ADAMS = County(
         name="Adams",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="ADM",
             five_letter="ADAMS",
             seven_letter="ADAMS",
@@ -50,7 +52,7 @@ class Counties(NamedLocationEnum):
     )
     ALAMOSA = County(
         name="Alamosa",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="ALM",
             five_letter="ALAMS",
             seven_letter="ALAMOSA",
@@ -65,7 +67,7 @@ class Counties(NamedLocationEnum):
     )
     ARAPAHOE = County(
         name="Arapahoe",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="APH",
             five_letter="ARAPH",
             seven_letter="ARAPAHO",
@@ -80,7 +82,7 @@ class Counties(NamedLocationEnum):
     )
     ARCHULETA = County(
         name="Archuleta",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="ARL",
             five_letter="ARCHL",
             seven_letter="ARCHULT",
@@ -95,7 +97,7 @@ class Counties(NamedLocationEnum):
     )
     BACA = County(
         name="Baca",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BAC",
             five_letter="BACA",
             seven_letter="BACA",
@@ -110,7 +112,7 @@ class Counties(NamedLocationEnum):
     )
     BENT = County(
         name="Bent",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BNT",
             five_letter="BENT",
             seven_letter="BENT",
@@ -125,7 +127,7 @@ class Counties(NamedLocationEnum):
     )
     BOULDER = County(
         name="Boulder",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BLD",
             five_letter="BOULD",
             seven_letter="BOULDER",
@@ -140,7 +142,7 @@ class Counties(NamedLocationEnum):
     )
     BROOMFIELD = County(
         name="Broomfield",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="BRM",
             five_letter="BROOM",
             seven_letter="BROOMFL",
@@ -155,7 +157,7 @@ class Counties(NamedLocationEnum):
     )
     CHAFFEE = County(
         name="Chaffee",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CHF",
             five_letter="CHAFF",
             seven_letter="CHAFFEE",
@@ -170,7 +172,7 @@ class Counties(NamedLocationEnum):
     )
     CHEYENNE = County(
         name="Cheyenne",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CHY",
             five_letter="CHYEN",
             seven_letter="CHYENNE",
@@ -185,7 +187,7 @@ class Counties(NamedLocationEnum):
     )
     CLEAR_CREEK = County(
         name="Clear Creek",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CLC",
             five_letter="CLEAR",
             seven_letter="CLEARCK",
@@ -200,7 +202,7 @@ class Counties(NamedLocationEnum):
     )
     CONEJOS = County(
         name="Conejos",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CNJ",
             five_letter="CONJO",
             seven_letter="CONEJOS",
@@ -215,7 +217,7 @@ class Counties(NamedLocationEnum):
     )
     COSTILLA = County(
         name="Costilla",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CTL",
             five_letter="CSTIL",
             seven_letter="COSTILL",
@@ -230,7 +232,7 @@ class Counties(NamedLocationEnum):
     )
     CROWLEY = County(
         name="Crowley",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CWL",
             five_letter="CROWL",
             seven_letter="CROWLEY",
@@ -245,7 +247,7 @@ class Counties(NamedLocationEnum):
     )
     CUSTER = County(
         name="Custer",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="CST",
             five_letter="CUSTR",
             seven_letter="CUSTER",
@@ -260,7 +262,7 @@ class Counties(NamedLocationEnum):
     )
     DELTA = County(
         name="Delta",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="DLT",
             five_letter="DELTA",
             seven_letter="DELTA",
@@ -275,7 +277,7 @@ class Counties(NamedLocationEnum):
     )
     DENVER = County(
         name="Denver",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="DEN",
             five_letter="DENVR",
             seven_letter="DENVER",
@@ -290,7 +292,7 @@ class Counties(NamedLocationEnum):
     )
     DOLORES = County(
         name="Dolores",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="DLR",
             five_letter="DOLOR",
             seven_letter="DOLORES",
@@ -305,7 +307,7 @@ class Counties(NamedLocationEnum):
     )
     DOUGLAS = County(
         name="Douglas",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="DGL",
             five_letter="DOUGL",
             seven_letter="DOUGLAS",
@@ -320,7 +322,7 @@ class Counties(NamedLocationEnum):
     )
     EAGLE = County(
         name="Eagle",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="EAG",
             five_letter="EAGLE",
             seven_letter="EAGLE",
@@ -335,7 +337,7 @@ class Counties(NamedLocationEnum):
     )
     ELBERT = County(
         name="Elbert",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="ELB",
             five_letter="ELBRT",
             seven_letter="ELBERT",
@@ -350,7 +352,7 @@ class Counties(NamedLocationEnum):
     )
     EL_PASO = County(
         name="El Paso",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="ELP",
             five_letter="ELPAS",
             seven_letter="ELPASO",
@@ -365,7 +367,7 @@ class Counties(NamedLocationEnum):
     )
     FREMONT = County(
         name="Fremont",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="FMT",
             five_letter="FREMT",
             seven_letter="FREMONT",
@@ -380,7 +382,7 @@ class Counties(NamedLocationEnum):
     )
     GARFIELD = County(
         name="Garfield",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GFL",
             five_letter="GARFL",
             seven_letter="GARFLD",
@@ -395,7 +397,7 @@ class Counties(NamedLocationEnum):
     )
     GILPIN = County(
         name="Gilpin",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GLP",
             five_letter="GILPN",
             seven_letter="GILPIN",
@@ -410,7 +412,7 @@ class Counties(NamedLocationEnum):
     )
     GRAND = County(
         name="Grand",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GRD",
             five_letter="GRAND",
             seven_letter="GRAND",
@@ -425,7 +427,7 @@ class Counties(NamedLocationEnum):
     )
     GUNNISON = County(
         name="Gunnison",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="GUN",
             five_letter="GUNN",
             seven_letter="GUNNISN",
@@ -440,7 +442,7 @@ class Counties(NamedLocationEnum):
     )
     HINSDALE = County(
         name="Hinsdale",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="HIN",
             five_letter="HINSD",
             seven_letter="HINSDAL",
@@ -455,7 +457,7 @@ class Counties(NamedLocationEnum):
     )
     HUERFANO = County(
         name="Huerfano",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="HRF",
             five_letter="HUERF",
             seven_letter="HUERFAN",
@@ -470,7 +472,7 @@ class Counties(NamedLocationEnum):
     )
     JACKSON = County(
         name="Jackson",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="JKS",
             five_letter="JACKS",
             seven_letter="JACKSON",
@@ -485,7 +487,7 @@ class Counties(NamedLocationEnum):
     )
     JEFFERSON = County(
         name="Jefferson",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="JFR",
             five_letter="JEFFR",
             seven_letter="JEFFERS",
@@ -500,7 +502,7 @@ class Counties(NamedLocationEnum):
     )
     KIOWA = County(
         name="Kiowa",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="KWA",
             five_letter="KIOWA",
             seven_letter="KIOWA",
@@ -515,7 +517,7 @@ class Counties(NamedLocationEnum):
     )
     KIT_CARSON = County(
         name="Kit Carson",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="KCR",
             five_letter="KITCR",
             seven_letter="KITCRSN",
@@ -530,7 +532,7 @@ class Counties(NamedLocationEnum):
     )
     LAKE = County(
         name="Lake",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LAK",
             five_letter="LAKE",
             seven_letter="LAKE",
@@ -545,7 +547,7 @@ class Counties(NamedLocationEnum):
     )
     LA_PLATA = County(
         name="La Plata",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LPT",
             five_letter="LPLAT",
             seven_letter="LAPLATA",
@@ -560,7 +562,7 @@ class Counties(NamedLocationEnum):
     )
     LARIMER = County(
         name="Larimer",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LAR",
             five_letter="LARIM",
             seven_letter="LARIMER",
@@ -575,7 +577,7 @@ class Counties(NamedLocationEnum):
     )
     LAS_ANIMAS = County(
         name="Las Animas",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LAS",
             five_letter="LSANM",
             seven_letter="LSANMAS",
@@ -590,7 +592,7 @@ class Counties(NamedLocationEnum):
     )
     LINCOLN = County(
         name="Lincoln",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LIN",
             five_letter="LINCL",
             seven_letter="LINCOLN",
@@ -605,7 +607,7 @@ class Counties(NamedLocationEnum):
     )
     LOGAN = County(
         name="Logan",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="LOG",
             five_letter="LOGAN",
             seven_letter="LOGAN",
@@ -620,7 +622,7 @@ class Counties(NamedLocationEnum):
     )
     MESA = County(
         name="Mesa",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MES",
             five_letter="MESA",
             seven_letter="MESA",
@@ -635,7 +637,7 @@ class Counties(NamedLocationEnum):
     )
     MINERAL = County(
         name="Mineral",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MIN",
             five_letter="MINRL",
             seven_letter="MINERAL",
@@ -650,7 +652,7 @@ class Counties(NamedLocationEnum):
     )
     MOFFAT = County(
         name="Moffat",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MFT",
             five_letter="MOFFT",
             seven_letter="MOFFAT",
@@ -665,7 +667,7 @@ class Counties(NamedLocationEnum):
     )
     MONTEZUMA = County(
         name="Montezuma",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MTZ",
             five_letter="MNTZM",
             seven_letter="MNTZUMA",
@@ -680,7 +682,7 @@ class Counties(NamedLocationEnum):
     )
     MONTROSE = County(
         name="Montrose",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MTR",
             five_letter="MNTRO",
             seven_letter="MONTRSE",
@@ -695,7 +697,7 @@ class Counties(NamedLocationEnum):
     )
     MORGAN = County(
         name="Morgan",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="MGN",
             five_letter="MORGN",
             seven_letter="MORGAN",
@@ -710,7 +712,7 @@ class Counties(NamedLocationEnum):
     )
     OTERO = County(
         name="Otero",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="OTR",
             five_letter="OTERO",
             seven_letter="OTERO",
@@ -725,7 +727,7 @@ class Counties(NamedLocationEnum):
     )
     OURAY = County(
         name="Ouray",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="OUR",
             five_letter="OURAY",
             seven_letter="OURAY",
@@ -740,7 +742,7 @@ class Counties(NamedLocationEnum):
     )
     PARK = County(
         name="Park",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="PAR",
             five_letter="PARK",
             seven_letter="PARK",
@@ -755,7 +757,7 @@ class Counties(NamedLocationEnum):
     )
     PHILLIPS = County(
         name="Phillips",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="PHI",
             five_letter="PHILL",
             seven_letter="PHILLPS",
@@ -770,7 +772,7 @@ class Counties(NamedLocationEnum):
     )
     PITKIN = County(
         name="Pitkin",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="PIT",
             five_letter="PITKN",
             seven_letter="PITKIN",
@@ -785,7 +787,7 @@ class Counties(NamedLocationEnum):
     )
     PROWERS = County(
         name="Prowers",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="PRW",
             five_letter="PROWR",
             seven_letter="PROWERS",
@@ -800,7 +802,7 @@ class Counties(NamedLocationEnum):
     )
     PUEBLO = County(
         name="Pueblo",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="PUB",
             five_letter="PUEBL",
             seven_letter="PUEBLO",
@@ -815,7 +817,7 @@ class Counties(NamedLocationEnum):
     )
     RIO_BLANCO = County(
         name="Rio Blanco",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="RBL",
             five_letter="RBLNC",
             seven_letter="RBLANCO",
@@ -830,7 +832,7 @@ class Counties(NamedLocationEnum):
     )
     RIO_GRANDE = County(
         name="Rio Grande",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="RGR",
             five_letter="RGRAN",
             seven_letter="RGRANDE",
@@ -845,7 +847,7 @@ class Counties(NamedLocationEnum):
     )
     ROUTT = County(
         name="Routt",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="RTT",
             five_letter="ROUTT",
             seven_letter="ROUTT",
@@ -860,7 +862,7 @@ class Counties(NamedLocationEnum):
     )
     SAGUACHE = County(
         name="Saguache",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SAG",
             five_letter="SAGCH",
             seven_letter="SAGCHE",
@@ -875,7 +877,7 @@ class Counties(NamedLocationEnum):
     )
     SAN_JUAN = County(
         name="San Juan",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SJN",
             five_letter="SANJN",
             seven_letter="SANJUAN",
@@ -890,7 +892,7 @@ class Counties(NamedLocationEnum):
     )
     SAN_MIGUEL = County(
         name="San Miguel",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SMG",
             five_letter="SANMG",
             seven_letter="SANMIGU",
@@ -905,7 +907,7 @@ class Counties(NamedLocationEnum):
     )
     SEDGWICK = County(
         name="Sedgwick",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SDW",
             five_letter="SEDGW",
             seven_letter="SEDGWIC",
@@ -920,7 +922,7 @@ class Counties(NamedLocationEnum):
     )
     SUMMIT = County(
         name="Summit",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="SUM",
             five_letter="SUMIT",
             seven_letter="SUMMIT",
@@ -935,7 +937,7 @@ class Counties(NamedLocationEnum):
     )
     TELLER = County(
         name="Teller",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="TLR",
             five_letter="TELLR",
             seven_letter="TELLER",
@@ -950,7 +952,7 @@ class Counties(NamedLocationEnum):
     )
     WASHINGTON = County(
         name="Washington",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="WSH",
             five_letter="WSHNG",
             seven_letter="WSHNGT",
@@ -965,7 +967,7 @@ class Counties(NamedLocationEnum):
     )
     WELD = County(
         name="Weld",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="WLD",
             five_letter="WELD",
             seven_letter="WELD",
@@ -980,7 +982,7 @@ class Counties(NamedLocationEnum):
     )
     YUMA = County(
         name="Yuma",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="YUM",
             five_letter="YUMA",
             seven_letter="YUMA",

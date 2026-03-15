@@ -1,8 +1,7 @@
 from typing import Any
 
 from colorado.airports import Airports
-from colorado.base.named_location import NamedLocationAbbreviations
-from colorado.base.populated_place import PopulatedPlace, PopulatedPlaceEnum
+from colorado.base.populated_place import PopulatedPlace, PopulatedPlaceEnum, Abbreviations
 from colorado.counties import Counties
 
 
@@ -21,7 +20,7 @@ class UnincorporatedAreas(PopulatedPlaceEnum):
     """
     HENDERSON = UnincorporatedArea(
         name="Henderson",
-        abbreviations=NamedLocationAbbreviations(
+        abbreviations=Abbreviations(
             three_letter="HND",
             five_letter="HENDR",
             seven_letter="HENDRSN",

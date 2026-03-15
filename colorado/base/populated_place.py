@@ -1,32 +1,26 @@
 from typing import Any
 
-from colorado.base.geocoordinated_location import GeocoordinatedLocation, GeocoordinatedLocationEnum
-from colorado.base.named_location import NamedLocation, NamedLocationEnum
-from colorado.counties import Counties
+from colorado.base.with_abbreviations import WithAbbreviations, WithAbbreviationsEnum, Abbreviations
+from colorado.base.with_coordinates import WithCoordinates, WithCoordinatesEnum
+from colorado.base.with_county import WithCounty, WithCountyEnum
+from colorado.base.with_name import WithName, WithNameEnum
+from colorado.base.with_nearest_airport import WithNearestAirport, WithNearestAirportEnum
 
 
-class PopulatedPlace(GeocoordinatedLocation, NamedLocation):
+class PopulatedPlace(WithName, WithAbbreviations, WithCoordinates, WithCounty, WithNearestAirport):
     """
-    A named and geo-coordinated location where people reside.
-    """
-
-    counties: list[Counties]
-    """
-    A list of counties containing this location.
+    A place where people reside in the state of Colorado.
     """
 
     def __init__(self, /, **data: Any):
         super().__init__(**data)
 
 
-class PopulatedPlaceEnum(GeocoordinatedLocationEnum, NamedLocationEnum):
+class PopulatedPlaceEnum(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithCountyEnum,
+                         WithNearestAirportEnum):
     """
     An enumeration of PopulatedPlace.
     """
 
     def __init__(self, location: PopulatedPlace):
         super().__init__(location=location)
-
-    @property
-    def counties(self) -> list[Counties]:
-        return self._location.counties

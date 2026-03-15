@@ -1,14 +1,14 @@
-import enum
 from typing import Any
 
 from pydantic import model_validator
 
+from colorado.base.location import LocationEnum, Location
 from colorado.internal import BaseModel, validate_attribute_lengths
 
 
-class NamedLocationAbbreviations(BaseModel):
+class Abbreviations(BaseModel):
     """
-    A set of abbreviations for named locations.
+    A set of abbreviations.
     """
     three_letter: str
     five_letter: str
@@ -31,16 +31,11 @@ class NamedLocationAbbreviations(BaseModel):
         return self
 
 
-class NamedLocation(BaseModel):
+class WithAbbreviations(Location):
     """
-    A location with a name and set of abbreviations.
+    A location with a set of abbreviations.
     """
-    name: str
-    """
-    The name of the location.
-    """
-
-    abbreviations: NamedLocationAbbreviations
+    abbreviations: Abbreviations
     """
     The abbreviations of the location.
     """
@@ -49,27 +44,19 @@ class NamedLocation(BaseModel):
         super().__init__(**data)
 
 
-class NamedLocationEnum(enum.Enum):
+class WithAbbreviationsEnum(LocationEnum):
     """
-    An enumeration for named locations.
+    An enumeration for WithAbbreviations objects.
     """
-    def __init__(self, location: NamedLocation):
-        self._location = location
+
+    def __init__(self, location: WithAbbreviations):
+        super().__init__(location)
 
     @property
-    def name(self) -> str:
-        """
-        The name of the location.
-        :return: The name of the location.
-        :rtype: str
-        """
-        return self._location.name
-
-    @property
-    def abbreviations(self) -> NamedLocationAbbreviations:
+    def abbreviations(self) -> Abbreviations:
         """
         The abbreviations of the location.
         :return: The abbreviations of the location.
-        :rtype: NamedLocationAbbreviations
+        :rtype: Abbreviations
         """
-        return self._location.abbreviations
+        return self._location.abbreviations  # type: ignore
