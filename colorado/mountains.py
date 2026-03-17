@@ -29,8 +29,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="ARH",
             five_letter="ARHP",
-            seven_letter="ARNG-HP",
-            fourteen_letter="ANTHR-RNG-HP"
+            seven_letter="ARNG_HP",
+            fourteen_letter="ANTHR_RNG_HP"
         ),
         latitude=38.8145,
         longitude=-107.1445,
@@ -42,8 +42,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="ANT",
             five_letter="ANTPK",
-            seven_letter="ANTR-PK",
-            fourteen_letter="ANTORA-PK"
+            seven_letter="ANTR_PK",
+            fourteen_letter="ANTORA_PK"
         ),
         latitude=38.325,
         longitude=-106.218,
@@ -55,8 +55,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="BLD",
             five_letter="BALD",
-            seven_letter="BALD-MT",
-            fourteen_letter="BALD-MTN"
+            seven_letter="BALD_MT",
+            fourteen_letter="BALD_MTN"
         ),
         latitude=39.4448,
         longitude=-105.9705,
@@ -68,8 +68,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="BRD",
             five_letter="BARD",
-            seven_letter="BARD-PK",
-            fourteen_letter="BARD-PEAK"
+            seven_letter="BARD_PK",
+            fourteen_letter="BARD_PEAK"
         ),
         latitude=39.7204,
         longitude=-105.8044,
@@ -81,8 +81,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="BNT",
             five_letter="BNTPK",
-            seven_letter="BNNT-PK",
-            fourteen_letter="BENNETT-PK"
+            seven_letter="BNNT_PK",
+            fourteen_letter="BENNETT_PK"
         ),
         latitude=37.4833,
         longitude=-106.4343,
@@ -94,8 +94,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="BWP",
             five_letter="BWMS",
-            seven_letter="BWMS-PK",
-            fourteen_letter="BILLWMS-PK"
+            seven_letter="BWMS_PK",
+            fourteen_letter="BILLWMS_PK"
         ),
         latitude=39.1806,
         longitude=-106.6102,
@@ -107,8 +107,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="BSN",
             five_letter="BISON",
-            seven_letter="BSON-MT",
-            fourteen_letter="BISON-MTN"
+            seven_letter="BSON_MT",
+            fourteen_letter="BISON_MTN"
         ),
         latitude=39.2384,
         longitude=-105.4978,
@@ -120,8 +120,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="BKM",
             five_letter="BKMOF",
-            seven_letter="BLK-MOF",
-            fourteen_letter="BLKMTN-MOF"
+            seven_letter="BLK_MOF",
+            fourteen_letter="BLKMTN_MOF"
         ),
         latitude=40.7835,
         longitude=-107.3691,
@@ -133,8 +133,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="BKP",
             five_letter="BKPRK",
-            seven_letter="BLK-PRK",
-            fourteen_letter="BLKMTN-PRK"
+            seven_letter="BLK_PRK",
+            fourteen_letter="BLKMTN_PRK"
         ),
         latitude=38.7185,
         longitude=-105.6874,
@@ -146,8 +146,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="BLR",
             five_letter="BLAIR",
-            seven_letter="BLAR-M",
-            fourteen_letter="BLAIR-MTN"
+            seven_letter="BLAR_M",
+            fourteen_letter="BLAIR_MTN"
         ),
         latitude=39.7943,
         longitude=-107.4176,
@@ -159,8 +159,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="BLC",
             five_letter="BLANC",
-            seven_letter="BLNC-PK",
-            fourteen_letter="BLANCA-PK"
+            seven_letter="BLNC_PK",
+            fourteen_letter="BLANCA_PK"
         ),
         latitude=37.5775,
         longitude=-105.4856,
@@ -172,8 +172,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="BSH",
             five_letter="BSHNL",
-            seven_letter="BUSH-PK",
-            fourteen_letter="BUSHNELL-PK"
+            seven_letter="BUSH_PK",
+            fourteen_letter="BUSHNELL_PK"
         ),
         latitude=38.3412,
         longitude=-105.8892,
@@ -185,8 +185,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="CAP",
             five_letter="CAPTL",
-            seven_letter="CAPT-PK",
-            fourteen_letter="CAPITOL-PK"
+            seven_letter="CAPT_PK",
+            fourteen_letter="CAPITOL_PK"
         ),
         latitude=39.1503,
         longitude=-107.0829,
@@ -198,8 +198,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="CBN",
             five_letter="CARBN",
-            seven_letter="CARB-PK",
-            fourteen_letter="CARBON-PK"
+            seven_letter="CARB_PK",
+            fourteen_letter="CARBON_PK"
         ),
         latitude=38.7943,
         longitude=-107.0431,
@@ -211,8 +211,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="CST",
             five_letter="CSTL",
-            seven_letter="CSTL-PK",
-            fourteen_letter="CASTLE-PK"
+            seven_letter="CSTL_PK",
+            fourteen_letter="CASTLE_PK"
         ),
         latitude=39.0097,
         longitude=-106.8614,
@@ -224,8 +224,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="CPW",
             five_letter="CPSAW",
-            seven_letter="CSTL-SW",
-            fourteen_letter="CASTLE-SAW"
+            seven_letter="CSTL_SW",
+            fourteen_letter="CASTLE_SAW"
         ),
         latitude=39.7723,
         longitude=-106.8304,
@@ -237,8 +237,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="CHR",
             five_letter="CHAIR",
-            seven_letter="CHAR-MT",
-            fourteen_letter="CHAIR-MTN"
+            seven_letter="CHAR_MT",
+            fourteen_letter="CHAIR_MTN"
         ),
         latitude=39.0581,
         longitude=-107.2822,
@@ -250,8 +250,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="CHK",
             five_letter="CHALK",
-            seven_letter="CHLK-BM",
-            fourteen_letter="CHALK-BNCHMK"
+            seven_letter="CHLK_BM",
+            fourteen_letter="CHALK_BNCHMK"
         ),
         latitude=37.1418,
         longitude=-106.75,
@@ -263,8 +263,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="CLK",
             five_letter="CLARK",
-            seven_letter="CLRK-PK",
-            fourteen_letter="CLARK-PK"
+            seven_letter="CLRK_PK",
+            fourteen_letter="CLARK_PK"
         ),
         latitude=40.6068,
         longitude=-105.93,
@@ -276,8 +276,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="COL",
             five_letter="COAL",
-            seven_letter="COAL-MT",
-            fourteen_letter="COAL-MTN"
+            seven_letter="COAL_MT",
+            fourteen_letter="COAL_MTN"
         ),
         latitude=38.787,
         longitude=-107.4837,
@@ -289,8 +289,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="CCH",
             five_letter="CCHTP",
-            seven_letter="CHTP-DM",
-            fourteen_letter="COCHETOPA-DM"
+            seven_letter="CHTP_DM",
+            fourteen_letter="COCHETOPA_DM"
         ),
         latitude=38.2267,
         longitude=-106.7147,
@@ -302,8 +302,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="CLB",
             five_letter="CLMBS",
-            seven_letter="CLMB-MT",
-            fourteen_letter="COLUMBUS-MT"
+            seven_letter="CLMB_MT",
+            fourteen_letter="COLUMBUS_MT"
         ),
         latitude=40.8799,
         longitude=-107.1921,
@@ -315,8 +315,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="CNJ",
             five_letter="CONJS",
-            seven_letter="CNJS-PK",
-            fourteen_letter="CONEJOS-PK"
+            seven_letter="CNJS_PK",
+            fourteen_letter="CONEJOS_PK"
         ),
         latitude=37.2887,
         longitude=-106.5709,
@@ -328,8 +328,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="CNW",
             five_letter="CRNWL",
-            seven_letter="CWAL-MT",
-            fourteen_letter="CORNWALL-MT"
+            seven_letter="CWAL_MT",
+            fourteen_letter="CORNWALL_MT"
         ),
         latitude=37.3811,
         longitude=-106.492,
@@ -341,8 +341,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="CRT",
             five_letter="CRATR",
-            seven_letter="CRTR-PK",
-            fourteen_letter="CRATER-PK"
+            seven_letter="CRTR_PK",
+            fourteen_letter="CRATER_PK"
         ),
         latitude=39.0396,
         longitude=-107.6628,
@@ -354,8 +354,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="CRB",
             five_letter="CSTBT",
-            seven_letter="CRST-BT",
-            fourteen_letter="CRESTED-BTT"
+            seven_letter="CRST_BT",
+            fourteen_letter="CRESTED_BTT"
         ),
         latitude=38.8835,
         longitude=-106.9436,
@@ -367,8 +367,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="CRS",
             five_letter="CRSTN",
-            seven_letter="CRST-PK",
-            fourteen_letter="CRESTONE-PK"
+            seven_letter="CRST_PK",
+            fourteen_letter="CRESTONE_PK"
         ),
         latitude=37.9669,
         longitude=-105.5855,
@@ -380,8 +380,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="CUL",
             five_letter="CULBR",
-            seven_letter="CULB-PK",
-            fourteen_letter="CULEBRA-PK"
+            seven_letter="CULB_PK",
+            fourteen_letter="CULEBRA_PK"
         ),
         latitude=37.1224,
         longitude=-105.1858,
@@ -393,8 +393,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="EBK",
             five_letter="EBECK",
-            seven_letter="EBK-MTN",
-            fourteen_letter="E-BECKWITH"
+            seven_letter="EBK_MTN",
+            fourteen_letter="E_BECKWITH"
         ),
         latitude=38.8464,
         longitude=-107.2233,
@@ -406,8 +406,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="ESP",
             five_letter="ESPAN",
-            seven_letter="ESP-PK",
-            fourteen_letter="E-SPANISH-PK"
+            seven_letter="ESP_PK",
+            fourteen_letter="E_SPANISH_PK"
         ),
         latitude=37.3934,
         longitude=-104.9201,
@@ -419,8 +419,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="ELK",
             five_letter="ELKMT",
-            seven_letter="ELK-MTN",
-            fourteen_letter="ELK-MTN"
+            seven_letter="ELK_MTN",
+            fourteen_letter="ELK_MTN"
         ),
         latitude=40.1619,
         longitude=-106.1285,
@@ -432,8 +432,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="ELL",
             five_letter="ELLIT",
-            seven_letter="ELLT-MT",
-            fourteen_letter="ELLIOTT-MTN"
+            seven_letter="ELLT_MT",
+            fourteen_letter="ELLIOTT_MTN"
         ),
         latitude=37.7344,
         longitude=-108.058,
@@ -446,7 +446,7 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
             three_letter="FLT",
             five_letter="FLTTP",
             seven_letter="FLATTOP",
-            fourteen_letter="FLATTOP-MTN"
+            fourteen_letter="FLATTOP_MTN"
         ),
         latitude=40.0147,
         longitude=-107.0833,
@@ -458,8 +458,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="GTH",
             five_letter="GOTH",
-            seven_letter="GOTH-MT",
-            fourteen_letter="GOTHIC-MTN"
+            seven_letter="GOTH_MT",
+            fourteen_letter="GOTHIC_MTN"
         ),
         latitude=38.9562,
         longitude=-107.0107,
@@ -471,8 +471,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="GRH",
             five_letter="GRHAM",
-            seven_letter="GRHM-PK",
-            fourteen_letter="GRAHAM-PK"
+            seven_letter="GRHM_PK",
+            fourteen_letter="GRAHAM_PK"
         ),
         latitude=37.4972,
         longitude=-107.3761,
@@ -484,8 +484,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="GRY",
             five_letter="GRAYS",
-            seven_letter="GRYS-PK",
-            fourteen_letter="GRAYS-PK"
+            seven_letter="GRYS_PK",
+            fourteen_letter="GRAYS_PK"
         ),
         latitude=39.6339,
         longitude=-105.8176,
@@ -497,8 +497,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="GRN",
             five_letter="GREEN",
-            seven_letter="GREN-MT",
-            fourteen_letter="GREEN-MTN"
+            seven_letter="GREN_MT",
+            fourteen_letter="GREEN_MTN"
         ),
         latitude=39.3053,
         longitude=-105.3001,
@@ -510,8 +510,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="GHN",
             five_letter="GRNHN",
-            seven_letter="GRNH-MT",
-            fourteen_letter="GREENHORN-MT"
+            seven_letter="GRNH_MT",
+            fourteen_letter="GREENHORN_MT"
         ),
         latitude=37.8815,
         longitude=-105.0133,
@@ -523,8 +523,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="GRZ",
             five_letter="GRZLY",
-            seven_letter="GRZL-PK",
-            fourteen_letter="GRIZZLY-PK"
+            seven_letter="GRZL_PK",
+            fourteen_letter="GRIZZLY_PK"
         ),
         latitude=39.0425,
         longitude=-106.5976,
@@ -536,8 +536,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="HAG",
             five_letter="HAGUE",
-            seven_letter="HAGS-PK",
-            fourteen_letter="HAGUES-PK"
+            seven_letter="HAGS_PK",
+            fourteen_letter="HAGUES_PK"
         ),
         latitude=40.4845,
         longitude=-105.6464,
@@ -549,8 +549,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="HND",
             five_letter="HANDS",
-            seven_letter="HNDS-PK",
-            fourteen_letter="HANDIES-PK"
+            seven_letter="HNDS_PK",
+            fourteen_letter="HANDIES_PK"
         ),
         latitude=37.913,
         longitude=-107.5044,
@@ -562,8 +562,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="HDS",
             five_letter="HDSCB",
-            seven_letter="HDSC-MT",
-            fourteen_letter="HARDSCRAB-MT"
+            seven_letter="HDSC_MT",
+            fourteen_letter="HARDSCRAB_MT"
         ),
         latitude=39.5171,
         longitude=-106.8021,
@@ -575,8 +575,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="HNR",
             five_letter="HENRY",
-            seven_letter="HNRY-MT",
-            fourteen_letter="HENRY-MTN"
+            seven_letter="HNRY_MT",
+            fourteen_letter="HENRY_MTN"
         ),
         latitude=38.6856,
         longitude=-106.6211,
@@ -588,8 +588,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="HSP",
             five_letter="HSPRS",
-            seven_letter="HSPR-MT",
-            fourteen_letter="HESPERUS-MT"
+            seven_letter="HSPR_MT",
+            fourteen_letter="HESPERUS_MT"
         ),
         latitude=37.4451,
         longitude=-108.089,
@@ -601,8 +601,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="HRS",
             five_letter="HORSE",
-            seven_letter="HORS-MT",
-            fourteen_letter="HORSE-MTN"
+            seven_letter="HORS_MT",
+            fourteen_letter="HORSE_MTN"
         ),
         latitude=37.308,
         longitude=-107.2864,
@@ -614,8 +614,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="HNT",
             five_letter="HNTRG",
-            seven_letter="HTMR-PK",
-            fourteen_letter="HUNTSMAN-PK"
+            seven_letter="HTMR_PK",
+            fourteen_letter="HUNTSMAN_PK"
         ),
         latitude=39.192,
         longitude=-107.3668,
@@ -627,8 +627,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="IRN",
             five_letter="IRON",
-            seven_letter="IRON-MT",
-            fourteen_letter="IRON-MTN"
+            seven_letter="IRON_MT",
+            fourteen_letter="IRON_MTN"
         ),
         latitude=37.6375,
         longitude=-105.2538,
@@ -640,8 +640,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="JAC",
             five_letter="JACQ",
-            seven_letter="JACQ-PK",
-            fourteen_letter="JACQUE-PK"
+            seven_letter="JACQ_PK",
+            fourteen_letter="JACQUE_PK"
         ),
         latitude=39.4549,
         longitude=-106.197,
@@ -653,8 +653,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="KNB",
             five_letter="KNOBY",
-            seven_letter="KNBY-CR",
-            fourteen_letter="KNOBBY-CRST"
+            seven_letter="KNBY_CR",
+            fourteen_letter="KNOBBY_CRST"
         ),
         latitude=39.3681,
         longitude=-105.605,
@@ -666,8 +666,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="LPL",
             five_letter="LPLAT",
-            seven_letter="LAPL-PK",
-            fourteen_letter="LA-PLATA-PK"
+            seven_letter="LAPL_PK",
+            fourteen_letter="LA_PLATA_PK"
         ),
         latitude=39.0294,
         longitude=-106.4729,
@@ -679,8 +679,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="LAR",
             five_letter="LARMI",
-            seven_letter="LARM-HP",
-            fourteen_letter="LARAMIE-HP"
+            seven_letter="LARM_HP",
+            fourteen_letter="LARAMIE_HP"
         ),
         latitude=40.7704,
         longitude=-105.7162,
@@ -692,8 +692,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="LTC",
             five_letter="LTCON",
-            seven_letter="LTL-CNE",
-            fourteen_letter="LITTLE-CONE"
+            seven_letter="LTL_CNE",
+            fourteen_letter="LITTLE_CONE"
         ),
         latitude=37.9275,
         longitude=-108.0908,
@@ -705,8 +705,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="LON",
             five_letter="LOCON",
-            seven_letter="LNE-CNE",
-            fourteen_letter="LONE-CONE"
+            seven_letter="LNE_CNE",
+            fourteen_letter="LONE_CONE"
         ),
         latitude=37.888,
         longitude=-108.2556,
@@ -718,8 +718,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="LNG",
             five_letter="LONGS",
-            seven_letter="LNGS-PK",
-            fourteen_letter="LONGS-PK"
+            seven_letter="LNGS_PK",
+            fourteen_letter="LONGS_PK"
         ),
         latitude=40.255,
         longitude=-105.6151,
@@ -731,7 +731,7 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="MRC",
             five_letter="MRCEL",
-            seven_letter="MRCL-MT",
+            seven_letter="MRCL_MT",
             fourteen_letter="MARCELLINA"
         ),
         latitude=38.9299,
@@ -744,8 +744,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="MRN",
             five_letter="MROON",
-            seven_letter="MRON-PK",
-            fourteen_letter="MAROON-PK"
+            seven_letter="MRON_PK",
+            fourteen_letter="MAROON_PK"
         ),
         latitude=39.0708,
         longitude=-106.989,
@@ -757,8 +757,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="MCH",
             five_letter="MTLES",
-            seven_letter="MTCL-MT",
-            fourteen_letter="MATCHLESS-MT"
+            seven_letter="MTCL_MT",
+            fourteen_letter="MATCHLESS_MT"
         ),
         latitude=38.834,
         longitude=-106.6451,
@@ -770,8 +770,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="MID",
             five_letter="MIDDL",
-            seven_letter="MID-PK",
-            fourteen_letter="MIDDLE-PK"
+            seven_letter="MID_PK",
+            fourteen_letter="MIDDLE_PK"
         ),
         latitude=37.8536,
         longitude=-108.1082,
@@ -783,8 +783,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="ATR",
             five_letter="ANTRO",
-            seven_letter="MT-ANTR",
-            fourteen_letter="MT-ANTERO"
+            seven_letter="MT_ANTR",
+            fourteen_letter="MT_ANTERO"
         ),
         latitude=38.6741,
         longitude=-106.2462,
@@ -796,8 +796,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="BLS",
             five_letter="BLSKY",
-            seven_letter="MT-BLSK",
-            fourteen_letter="MT-BLUE-SKY"
+            seven_letter="MT_BLSK",
+            fourteen_letter="MT_BLUE_SKY"
         ),
         latitude=39.5883,
         longitude=-105.6438,
@@ -809,8 +809,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="CTL",
             five_letter="CENTL",
-            seven_letter="MT-CNTL",
-            fourteen_letter="MT-CENTNNL"
+            seven_letter="MT_CNTL",
+            fourteen_letter="MT_CENTNNL"
         ),
         latitude=37.6062,
         longitude=-107.2446,
@@ -822,8 +822,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="LBT",
             five_letter="ELBRT",
-            seven_letter="MT-ELBT",
-            fourteen_letter="MT-ELBERT"
+            seven_letter="MT_ELBT",
+            fourteen_letter="MT_ELBERT"
         ),
         latitude=39.1178,
         longitude=-106.4454,
@@ -835,8 +835,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="GRO",
             five_letter="GUERO",
-            seven_letter="MT-GURO",
-            fourteen_letter="MT-GUERO"
+            seven_letter="MT_GURO",
+            fourteen_letter="MT_GUERO"
         ),
         latitude=38.7196,
         longitude=-107.3861,
@@ -848,8 +848,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="GUN",
             five_letter="GUNN",
-            seven_letter="MT-GUNN",
-            fourteen_letter="MT-GUNNISON"
+            seven_letter="MT_GUNN",
+            fourteen_letter="MT_GUNNISON"
         ),
         latitude=38.8121,
         longitude=-107.3826,
@@ -861,8 +861,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="HRV",
             five_letter="HARVD",
-            seven_letter="MT-HVRD",
-            fourteen_letter="MT-HARVARD"
+            seven_letter="MT_HVRD",
+            fourteen_letter="MT_HARVARD"
         ),
         latitude=38.9244,
         longitude=-106.3207,
@@ -874,8 +874,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="HRD",
             five_letter="HERAD",
-            seven_letter="MT-HERD",
-            fourteen_letter="MT-HERARD"
+            seven_letter="MT_HERD",
+            fourteen_letter="MT_HERARD"
         ),
         latitude=37.8492,
         longitude=-105.4949,
@@ -887,8 +887,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="JKS",
             five_letter="JKSON",
-            seven_letter="MT-JKSN",
-            fourteen_letter="MT-JACKSON"
+            seven_letter="MT_JKSN",
+            fourteen_letter="MT_JACKSON"
         ),
         latitude=39.4853,
         longitude=-106.5367,
@@ -900,8 +900,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="LCN",
             five_letter="LNCLN",
-            seven_letter="MT-LNCN",
-            fourteen_letter="MT-LINCOLN"
+            seven_letter="MT_LNCN",
+            fourteen_letter="MT_LINCOLN"
         ),
         latitude=39.3515,
         longitude=-106.1116,
@@ -913,8 +913,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="MSV",
             five_letter="MSSIV",
-            seven_letter="MT-MSVE",
-            fourteen_letter="MT-MASSIVE"
+            seven_letter="MT_MSVE",
+            fourteen_letter="MT_MASSIVE"
         ),
         latitude=39.1875,
         longitude=-106.4757,
@@ -926,8 +926,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="MST",
             five_letter="MSTAS",
-            seven_letter="MT-MSTS",
-            fourteen_letter="MT-MESTAS"
+            seven_letter="MT_MSTS",
+            fourteen_letter="MT_MESTAS"
         ),
         latitude=37.583,
         longitude=-105.1474,
@@ -939,8 +939,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="OSO",
             five_letter="OSO",
-            seven_letter="MT-OSO",
-            fourteen_letter="MT-OSO"
+            seven_letter="MT_OSO",
+            fourteen_letter="MT_OSO"
         ),
         latitude=37.607,
         longitude=-107.4936,
@@ -952,8 +952,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="OUR",
             five_letter="OURAY",
-            seven_letter="MT-OURY",
-            fourteen_letter="MT-OURAY"
+            seven_letter="MT_OURY",
+            fourteen_letter="MT_OURAY"
         ),
         latitude=38.4227,
         longitude=-106.2247,
@@ -965,8 +965,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="PWL",
             five_letter="POWLL",
-            seven_letter="MT-PWLL",
-            fourteen_letter="MT-POWELL"
+            seven_letter="MT_PWLL",
+            fourteen_letter="MT_POWELL"
         ),
         latitude=39.7601,
         longitude=-106.3407,
@@ -978,8 +978,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="PRC",
             five_letter="PRINC",
-            seven_letter="MT-PRCN",
-            fourteen_letter="MT-PRINCTN"
+            seven_letter="MT_PRCN",
+            fourteen_letter="MT_PRINCTN"
         ),
         latitude=38.7492,
         longitude=-106.2424,
@@ -991,8 +991,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="RTF",
             five_letter="RCTFN",
-            seven_letter="MT-RCHT",
-            fourteen_letter="MT-RICHTHFN"
+            seven_letter="MT_RCHT",
+            fourteen_letter="MT_RICHTHFN"
         ),
         latitude=40.4695,
         longitude=-105.8945,
@@ -1004,8 +1004,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="SVH",
             five_letter="SLVHL",
-            seven_letter="MT-SLVH",
-            fourteen_letter="MT-SILVRHLS"
+            seven_letter="MT_SLVH",
+            fourteen_letter="MT_SILVRHLS"
         ),
         latitude=39.3394,
         longitude=-106.0054,
@@ -1017,8 +1017,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="SNF",
             five_letter="SNFLS",
-            seven_letter="MT-SNFF",
-            fourteen_letter="MT-SNEFFELS"
+            seven_letter="MT_SNFF",
+            fourteen_letter="MT_SNEFFELS"
         ),
         latitude=38.0038,
         longitude=-107.7923,
@@ -1030,8 +1030,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="WIL",
             five_letter="WILSN",
-            seven_letter="MT-WLSN",
-            fourteen_letter="MT-WILSON"
+            seven_letter="MT_WLSN",
+            fourteen_letter="MT_WILSON"
         ),
         latitude=37.8391,
         longitude=-107.9916,
@@ -1043,8 +1043,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="YAL",
             five_letter="YALE",
-            seven_letter="MT-YALE",
-            fourteen_letter="MT-YALE"
+            seven_letter="MT_YALE",
+            fourteen_letter="MT_YALE"
         ),
         latitude=38.8442,
         longitude=-106.3138,
@@ -1056,8 +1056,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="ZRK",
             five_letter="ZIRKL",
-            seven_letter="MT-ZRKL",
-            fourteen_letter="MT-ZIRKEL"
+            seven_letter="MT_ZRKL",
+            fourteen_letter="MT_ZIRKEL"
         ),
         latitude=40.8313,
         longitude=-106.6631,
@@ -1069,8 +1069,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="ZWC",
             five_letter="ZWISC",
-            seven_letter="MT-ZWSN",
-            fourteen_letter="MT-ZWISCHEN"
+            seven_letter="MT_ZWSN",
+            fourteen_letter="MT_ZWISCHEN"
         ),
         latitude=37.7913,
         longitude=-105.4554,
@@ -1082,8 +1082,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="HCR",
             five_letter="HLYCR",
-            seven_letter="MT-HLCR",
-            fourteen_letter="MT-HOLY-CRS"
+            seven_letter="MT_HLCR",
+            fourteen_letter="MT_HOLY_CRS"
         ),
         latitude=39.4668,
         longitude=-106.4817,
@@ -1095,8 +1095,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="NAP",
             five_letter="NAPPK",
-            seven_letter="NARP-PK",
-            fourteen_letter="N-ARAPAHO-PK"
+            seven_letter="NARP_PK",
+            fourteen_letter="N_ARAPAHO_PK"
         ),
         latitude=40.0265,
         longitude=-105.6504,
@@ -1108,8 +1108,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="NMP",
             five_letter="NMMPK",
-            seven_letter="NMAM-PK",
-            fourteen_letter="N-MAMM-PK"
+            seven_letter="NMAM_PK",
+            fourteen_letter="N_MAMM_PK"
         ),
         latitude=39.3865,
         longitude=-107.866,
@@ -1121,8 +1121,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="PKC",
             five_letter="PKCON",
-            seven_letter="PRK-CNE",
-            fourteen_letter="PARK-CONE"
+            seven_letter="PRK_CNE",
+            fourteen_letter="PARK_CONE"
         ),
         latitude=38.7967,
         longitude=-106.6028,
@@ -1135,7 +1135,7 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
             three_letter="PKV",
             five_letter="PARKV",
             seven_letter="PKVIEW",
-            fourteen_letter="PARKVIEW-MT"
+            fourteen_letter="PARKVIEW_MT"
         ),
         latitude=40.3303,
         longitude=-106.1363,
@@ -1147,8 +1147,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="PRY",
             five_letter="PARRY",
-            seven_letter="PRRY-PK",
-            fourteen_letter="PARRY-PK"
+            seven_letter="PRRY_PK",
+            fourteen_letter="PARRY_PK"
         ),
         latitude=39.8381,
         longitude=-105.7132,
@@ -1160,8 +1160,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="PIK",
             five_letter="PIKES",
-            seven_letter="PIKE-PK",
-            fourteen_letter="PIKES-PK"
+            seven_letter="PIKE_PK",
+            fourteen_letter="PIKES_PK"
         ),
         latitude=38.8405,
         longitude=-105.0442,
@@ -1173,8 +1173,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="PUM",
             five_letter="PUMA",
-            seven_letter="PUMA-PK",
-            fourteen_letter="PUMA-PK"
+            seven_letter="PUMA_PK",
+            fourteen_letter="PUMA_PK"
         ),
         latitude=39.1572,
         longitude=-105.5815,
@@ -1186,8 +1186,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="RTB",
             five_letter="REDTB",
-            seven_letter="RTBL-MT",
-            fourteen_letter="REDTABLE-MT"
+            seven_letter="RTBL_MT",
+            fourteen_letter="REDTABLE_MT"
         ),
         latitude=39.4181,
         longitude=-106.7712,
@@ -1199,8 +1199,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="RGP",
             five_letter="RGPYR",
-            seven_letter="RIOG-PY",
-            fourteen_letter="RIOGRND-PYR"
+            seven_letter="RIOG_PY",
+            fourteen_letter="RIOGRND_PYR"
         ),
         latitude=37.6797,
         longitude=-107.3924,
@@ -1212,8 +1212,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="SLP",
             five_letter="SLUIS",
-            seven_letter="SANL-PK",
-            fourteen_letter="SAN-LUIS-PK"
+            seven_letter="SANL_PK",
+            fourteen_letter="SAN_LUIS_PK"
         ),
         latitude=37.9868,
         longitude=-106.9313,
@@ -1225,8 +1225,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="SDN",
             five_letter="SANDN",
-            seven_letter="SNDMT-N",
-            fourteen_letter="SANDMTN-N"
+            seven_letter="SNDMT_N",
+            fourteen_letter="SANDMTN_N"
         ),
         latitude=40.7636,
         longitude=-107.0575,
@@ -1238,8 +1238,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="SWT",
             five_letter="SAWTH",
-            seven_letter="SAWT-MT",
-            fourteen_letter="SAWTOOTH-MT"
+            seven_letter="SAWT_MT",
+            fourteen_letter="SAWTOOTH_MT"
         ),
         latitude=38.274,
         longitude=-106.867,
@@ -1251,8 +1251,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="SHP",
             five_letter="SHEEP",
-            seven_letter="SHEP-MT",
-            fourteen_letter="SHEEP-MTN"
+            seven_letter="SHEP_MT",
+            fourteen_letter="SHEEP_MTN"
         ),
         latitude=40.361,
         longitude=-106.2658,
@@ -1264,8 +1264,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="SCP",
             five_letter="SLPCT",
-            seven_letter="SLPY-PK",
-            fourteen_letter="SLEEPY-CAT"
+            seven_letter="SLPY_PK",
+            fourteen_letter="SLEEPY_CAT"
         ),
         latitude=40.1275,
         longitude=-107.5338,
@@ -1277,8 +1277,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="SRP",
             five_letter="STHRV",
-            seven_letter="SRIV-PK",
-            fourteen_letter="S-RIVER-PK"
+            seven_letter="SRIV_PK",
+            fourteen_letter="S_RIVER_PK"
         ),
         latitude=37.5741,
         longitude=-106.9815,
@@ -1290,8 +1290,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="SPC",
             five_letter="SPECM",
-            seven_letter="SPCM-MT",
-            fourteen_letter="SPECIMEN-MT"
+            seven_letter="SPCM_MT",
+            fourteen_letter="SPECIMEN_MT"
         ),
         latitude=40.4449,
         longitude=-105.8081,
@@ -1303,8 +1303,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="SPR",
             five_letter="SPRUC",
-            seven_letter="SPRC-MT",
-            fourteen_letter="SPRUCE-MTN"
+            seven_letter="SPRC_MT",
+            fourteen_letter="SPRUCE_MTN"
         ),
         latitude=39.1973,
         longitude=-107.522,
@@ -1316,8 +1316,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="SLT",
             five_letter="SULTN",
-            seven_letter="SLTN-MT",
-            fourteen_letter="SULTAN-MTN"
+            seven_letter="SLTN_MT",
+            fourteen_letter="SULTAN_MTN"
         ),
         latitude=37.7859,
         longitude=-107.7038,
@@ -1329,8 +1329,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="SMT",
             five_letter="SUMMT",
-            seven_letter="SUMT-PK",
-            fourteen_letter="SUMMIT-PK"
+            seven_letter="SUMT_PK",
+            fourteen_letter="SUMMIT_PK"
         ),
         latitude=37.3506,
         longitude=-106.6968,
@@ -1342,8 +1342,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="39M",
             five_letter="39MIL",
-            seven_letter="39MI-MT",
-            fourteen_letter="39MILE-MTN"
+            seven_letter="39MI_MT",
+            fourteen_letter="39MILE_MTN"
         ),
         latitude=38.8324,
         longitude=-105.5553,
@@ -1355,8 +1355,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="TMC",
             five_letter="TOMCH",
-            seven_letter="TMCH-DM",
-            fourteen_letter="TOMICHI-DM"
+            seven_letter="TMCH_DM",
+            fourteen_letter="TOMICHI_DM"
         ),
         latitude=38.4849,
         longitude=-106.5291,
@@ -1368,8 +1368,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="TWR",
             five_letter="TOWER",
-            seven_letter="TOWR-MT",
-            fourteen_letter="TOWER-MTN"
+            seven_letter="TOWR_MT",
+            fourteen_letter="TOWER_MTN"
         ),
         latitude=37.8573,
         longitude=-107.623,
@@ -1381,8 +1381,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="TRS",
             five_letter="TREAS",
-            seven_letter="TRSR-MT",
-            fourteen_letter="TREASURE-MT"
+            seven_letter="TRSR_MT",
+            fourteen_letter="TREASURE_MT"
         ),
         latitude=39.0244,
         longitude=-107.1228,
@@ -1394,8 +1394,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="TWL",
             five_letter="TWLIT",
-            seven_letter="TWLT-PK",
-            fourteen_letter="TWILIGHT-PK"
+            seven_letter="TWLT_PK",
+            fourteen_letter="TWILIGHT_PK"
         ),
         latitude=37.663,
         longitude=-107.727,
@@ -1407,7 +1407,7 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="TSP",
             five_letter="TWSIS",
-            seven_letter="TWIN-PK",
+            seven_letter="TWIN_PK",
             fourteen_letter="TWNSISTRS"
         ),
         latitude=40.2886,
@@ -1420,7 +1420,7 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="UNC",
             five_letter="UNCPG",
-            seven_letter="UNCP-PK",
+            seven_letter="UNCP_PK",
             fourteen_letter="UNCOMPAHGRE"
         ),
         latitude=38.0717,
@@ -1433,8 +1433,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="UTE",
             five_letter="UTE",
-            seven_letter="UTE-PK",
-            fourteen_letter="UTE-PEAK"
+            seven_letter="UTE_PK",
+            fourteen_letter="UTE_PEAK"
         ),
         latitude=37.2841,
         longitude=-108.7787,
@@ -1446,8 +1446,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="VRM",
             five_letter="VERML",
-            seven_letter="VRML-PK",
-            fourteen_letter="VERMILION-PK"
+            seven_letter="VRML_PK",
+            fourteen_letter="VERMILION_PK"
         ),
         latitude=37.7993,
         longitude=-107.8285,
@@ -1459,8 +1459,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="WAU",
             five_letter="WAUGH",
-            seven_letter="WAUG-MT",
-            fourteen_letter="WAUGH-MTN"
+            seven_letter="WAUG_MT",
+            fourteen_letter="WAUGH_MTN"
         ),
         latitude=38.6022,
         longitude=-105.6955,
@@ -1472,8 +1472,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="WBF",
             five_letter="WBUFF",
-            seven_letter="WBUF-PK",
-            fourteen_letter="W-BUFFALO-PK"
+            seven_letter="WBUF_PK",
+            fourteen_letter="W_BUFFALO_PK"
         ),
         latitude=38.9917,
         longitude=-106.1249,
@@ -1485,8 +1485,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="WEP",
             five_letter="WELK",
-            seven_letter="WELK-PK",
-            fourteen_letter="W-ELK-PK"
+            seven_letter="WELK_PK",
+            fourteen_letter="W_ELK_PK"
         ),
         latitude=38.7179,
         longitude=-107.1994,
@@ -1498,8 +1498,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="WSP",
             five_letter="WSPAN",
-            seven_letter="WSPA-PK",
-            fourteen_letter="W-SPANISH-PK"
+            seven_letter="WSPA_PK",
+            fourteen_letter="W_SPANISH_PK"
         ),
         latitude=37.3756,
         longitude=-104.9934,
@@ -1511,8 +1511,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="WHT",
             five_letter="WHETS",
-            seven_letter="WHTS-MT",
-            fourteen_letter="WHETSTONE-MT"
+            seven_letter="WHTS_MT",
+            fourteen_letter="WHETSTONE_MT"
         ),
         latitude=38.8223,
         longitude=-106.9799,
@@ -1524,8 +1524,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="WLL",
             five_letter="WLLMS",
-            seven_letter="WLMS-PK",
-            fourteen_letter="WILLIAMS-PK"
+            seven_letter="WLMS_PK",
+            fourteen_letter="WILLIAMS_PK"
         ),
         latitude=39.8552,
         longitude=-106.1854,
@@ -1537,8 +1537,8 @@ class Mountains(WithNameEnum, WithAbbreviationsEnum, WithCoordinatesEnum, WithNe
         abbreviations=Abbreviations(
             three_letter="WND",
             five_letter="WNDOM",
-            seven_letter="WNDM-PK",
-            fourteen_letter="WINDOM-PK"
+            seven_letter="WNDM_PK",
+            fourteen_letter="WINDOM_PK"
         ),
         latitude=37.6212,
         longitude=-107.5919,
