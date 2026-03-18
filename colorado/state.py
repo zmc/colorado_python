@@ -1,4 +1,6 @@
-from united_states import UnitedStates, State
+from typing import Any
+
+from united_states import UnitedStates, State as UnitedStatesEnum
 
 from colorado.base.with_abbreviations import WithAbbreviations, Abbreviations
 from colorado.base.with_borders import WithBorders
@@ -11,7 +13,7 @@ class State(WithName, WithAbbreviations, WithBorders):
 
     def coordinates_within_borders(self, latitude: float, longitude: float) -> bool:
         us = UnitedStates()
-        states: list[State] = us.from_coords(latitude, longitude)
+        states: list[UnitedStatesEnum] = us.from_coords(latitude, longitude)
         for state in states:
             if state.abbr == 'CO':
                 return True
