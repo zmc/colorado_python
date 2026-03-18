@@ -1,13 +1,54 @@
-from typing import Any
+from pathlib import Path
+import json
 
 from colorado.base.with_abbreviations import WithAbbreviations, WithAbbreviationsEnum, Abbreviations
+from colorado.base.with_borders import WithBorders, WithBordersEnum
 from colorado.base.with_name import WithName, WithNameEnum
+from colorado.internal.geojson import to_polygon_rings, point_in_polygon, PolygonRings
 from colorado.license_plate_codes import LicensePlateCodes
 from colorado.zones import Zones
 
+CountyPolygonIndex: TypeAlias = dict[str, list[PolygonRings]]  # geojson_id -> polygons
+COUNTY_POLYGON_INDEX: CountyPolygonIndex = {}
+
+
+def _get_county_polygon_index() -> CountyPolygonIndex:
+    global COUNTY_POLYGON_INDEX
+    if not COUNTY_POLYGON_INDEX:
+        geojson_path = Path(__file__).resolve().parent / "COLORADO_COUNTY_BORDERS.geojson"
+        with geojson_path.open("r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        features: list[dict] = data.get("features", [])
+        for feature in features:
+            props: dict = feature.get("properties", {})
+            geometry: dict = feature.get("geometry", {})
+            geojson_id: int = feature.get("id")
+
+            geom_type: str = geometry.get("type")
+            coords: list[Tuple[float, float]] = geometry.get("coordinates")
+
+            polygons: list[PolygonRings] = []
+            if geom_type == "Polygon":
+                polygon = to_polygon_rings(coords)
+                if polygon:
+                    polygons.append(polygon)
+            elif geom_type == "MultiPolygon":
+                for raw_polygon in coords or []:
+                    polygon = to_polygon_rings(raw_polygon)
+                    if polygon:
+                        polygons.append(polygon)
+            else:
+                continue
+
+            if polygons:
+                COUNTY_POLYGON_INDEX.setdefault(geojson_id, []).extend(polygons)
+
+    return COUNTY_POLYGON_INDEX
+
 
 # A county is a named location, but does not have a specific lat/long pair
-class County(WithName, WithAbbreviations):
+class County(WithName, WithAbbreviations, WithBorders):
     """
     Represents a county in the state of Colorado.
     """
@@ -22,6 +63,11 @@ class County(WithName, WithAbbreviations):
     The API code representing the county, from the Colorado Department of Natural Resources.
     """
 
+    geojson_id: int
+    """
+    The ID of the county in the GeoJSON data containing county borders.
+    """
+
     license_plate_codes: LicensePlateCodes
     """
     A set of 2-letter and 3-letter prefix ranges that were historically used on Colorado license plates to indicate the county of registration.
@@ -30,8 +76,13 @@ class County(WithName, WithAbbreviations):
     def __init__(self, /, **data: Any):
         super().__init__(**data)
 
+    def coordinates_within_borders(self, latitude: float, longitude: float) -> bool:
+        county_polygon_index = _get_county_polygon_index()
+        county_polygons = county_polygon_index.get(int(self.geojson_id), [])
+        return any(point_in_polygon(latitude, longitude, polygon) for polygon in county_polygons)
 
-class Counties(WithNameEnum, WithAbbreviationsEnum):
+
+class Counties(WithNameEnum, WithAbbreviationsEnum, WithBordersEnum):
     """
     An enumeration of all counties in the state of Colorado.
     """
@@ -45,6 +96,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.URBAN,
         api_code="001",
+        geojson_id=246,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["TE-UF", "GA-GG"],
             three_letter_prefix_ranges=["SAA-TZZ"]
@@ -60,6 +112,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.RURAL,
         api_code="003",
+        geojson_id=247,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["XE-XG"],
             three_letter_prefix_ranges=["EAA-EBD"],
@@ -75,6 +128,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.URBAN,
         api_code="005",
+        geojson_id=248,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["PH-RP", "FA-FG"],
             three_letter_prefix_ranges=["PAA-RZZ"]
@@ -90,6 +144,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="007",
+        geojson_id=249,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["YU"],
             three_letter_prefix_ranges=["FAA-FAL"]
@@ -105,6 +160,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="009",
+        geojson_id=250,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["WG"],
             three_letter_prefix_ranges=["EBE-EBW"]
@@ -120,6 +176,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="011",
+        geojson_id=251,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["XC"],
             three_letter_prefix_ranges=["EBX-ECL"]
@@ -135,6 +192,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.URBAN,
         api_code="013",
+        geojson_id=252,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["ML-NF", "FH-FP"],
             three_letter_prefix_ranges=["MAA-NZZ"]
@@ -150,6 +208,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.SUBURBAN,
         api_code="014",
+        geojson_id=253,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=[],
             three_letter_prefix_ranges=[]
@@ -165,6 +224,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.RURAL,
         api_code="015",
+        geojson_id=254,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["XH-XK"],
             three_letter_prefix_ranges=["FAM-FCC"]
@@ -180,6 +240,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="017",
+        geojson_id=255,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["YR"],
             three_letter_prefix_ranges=["ECM-ECT"]
@@ -195,6 +256,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.RURAL,
         api_code="019",
+        geojson_id=256,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["YY-YZ"],
             three_letter_prefix_ranges=["ECU-EDU"]
@@ -210,6 +272,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="021",
+        geojson_id=257,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["WS"],
             three_letter_prefix_ranges=["EDV-EEK"]
@@ -225,6 +288,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="023",
+        geojson_id=258,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["YA"],
             three_letter_prefix_ranges=["EEL-EES"]
@@ -240,6 +304,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="025",
+        geojson_id=259,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["XW-XX"],
             three_letter_prefix_ranges=["EET-EFA"]
@@ -255,6 +320,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="027",
+        geojson_id=260,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["ZA"],
             three_letter_prefix_ranges=["EFB-EFG"]
@@ -270,6 +336,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.RURAL,
         api_code="029",
+        geojson_id=261,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["VL-VN"],
             three_letter_prefix_ranges=[]
@@ -285,6 +352,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.URBAN,
         api_code="031",
+        geojson_id=262,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["AA-CV"],
             three_letter_prefix_ranges=["AAA-DZZ"]
@@ -300,6 +368,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="033",
+        geojson_id=263,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["ZH"],
             three_letter_prefix_ranges=["EHR-EHV"]
@@ -315,6 +384,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.SUBURBAN,
         api_code="035",
+        geojson_id=264,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["YS-YT"],
             three_letter_prefix_ranges=["EHW-EMA"]
@@ -330,6 +400,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.RURAL,
         api_code="037",
+        geojson_id=265,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["YM-YN"],
             three_letter_prefix_ranges=["EMB-EPA"]
@@ -345,6 +416,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="039",
+        geojson_id=266,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["XS-XT"],
             three_letter_prefix_ranges=["EPB-EPU"]
@@ -360,6 +432,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.URBAN,
         api_code="041",
+        geojson_id=267,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["JX-LL", "FR-FT", "FV"],
             three_letter_prefix_ranges=["KAA-LZZ"]
@@ -375,6 +448,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.RURAL,
         api_code="043",
+        geojson_id=268,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["UP-UT"],
             three_letter_prefix_ranges=["EPV-ETV"]
@@ -390,6 +464,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.RURAL,
         api_code="045",
+        geojson_id=269,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["WM-WR"],
             three_letter_prefix_ranges=["ETM-ETW"]
@@ -405,6 +480,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.RURAL,
         api_code="047",
+        geojson_id=270,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["ZK"],
             three_letter_prefix_ranges=["EWN-EWV"]
@@ -420,6 +496,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="049",
+        geojson_id=271,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["ZB-ZC"],
             three_letter_prefix_ranges=["EWZ-EYB"]
@@ -435,6 +512,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.RURAL,
         api_code="051",
+        geojson_id=272,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["YD-YE"],
             three_letter_prefix_ranges=["EYC-EZC"]
@@ -450,6 +528,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="053",
+        geojson_id=273,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["ZN"],
             three_letter_prefix_ranges=["EZD-EZE"]
@@ -465,6 +544,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="055",
+        geojson_id=274,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["VE"],
             three_letter_prefix_ranges=["EZF-EZW"]
@@ -480,6 +560,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="057",
+        geojson_id=275,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["ZJ"],
             three_letter_prefix_ranges=["FGC-FGH"]
@@ -495,6 +576,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.URBAN,
         api_code="059",
+        geojson_id=276,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["RS-TD", "HG-HW"],
             three_letter_prefix_ranges=["GAA-JZZ"]
@@ -510,6 +592,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="061",
+        geojson_id=277,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["YP"],
             three_letter_prefix_ranges=["WUS-WUY"]
@@ -525,6 +608,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="063",
+        geojson_id=278,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["WU-WV"],
             three_letter_prefix_ranges=["WUZ-WVV"]
@@ -540,6 +624,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.RURAL,
         api_code="065",
+        geojson_id=279,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["YF-YH"],
             three_letter_prefix_ranges=["FCD-FDE"]
@@ -555,6 +640,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.RURAL,
         api_code="067",
+        geojson_id=280,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["VV-VY"],
             three_letter_prefix_ranges=["FDF-FGB"]
@@ -570,6 +656,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.RURAL,
         api_code="069",
+        geojson_id=281,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["LU-MK", "FX-FY"],
             three_letter_prefix_ranges=["FHA-FZZ"]
@@ -585,6 +672,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="071",
+        geojson_id=282,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["LM-LN"],
             three_letter_prefix_ranges=["UAA-UBK"]
@@ -600,6 +688,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="073",
+        geojson_id=283,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["XP-XR"],
             three_letter_prefix_ranges=["UBL-UCA"]
@@ -615,6 +704,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="075",
+        geojson_id=284,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["UG-UJ"],
             three_letter_prefix_ranges=["UCB-UEH"]
@@ -630,6 +720,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.RURAL,
         api_code="077",
+        geojson_id=285,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["NG-NT"],
             three_letter_prefix_ranges=["UEJ-UNL"]
@@ -645,6 +736,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="079",
+        geojson_id=286,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["ZM"],
             three_letter_prefix_ranges=["UNM-UNR"]
@@ -660,6 +752,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.RURAL,
         api_code="081",
+        geojson_id=287,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["YJ-YK"],
             three_letter_prefix_ranges=["UNS-UPX"]
@@ -675,6 +768,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.RURAL,
         api_code="083",
+        geojson_id=288,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["XL-XN"],
             three_letter_prefix_ranges=["UPY-USL"]
@@ -690,6 +784,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.RURAL,
         api_code="085",
+        geojson_id=289,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["WB-WD"],
             three_letter_prefix_ranges=["USM-UUZ"]
@@ -705,6 +800,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.RURAL,
         api_code="087",
+        geojson_id=290,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["UW-UY"],
             three_letter_prefix_ranges=["UVA-UXR"]
@@ -720,6 +816,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="089",
+        geojson_id=291,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["PA-PC"],
             three_letter_prefix_ranges=["UXS-UZZ"]
@@ -735,6 +832,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="091",
+        geojson_id=292,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["ZF"],
             three_letter_prefix_ranges=["VAA-VAG"]
@@ -750,6 +848,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="093",
+        geojson_id=293,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["ZD"],
             three_letter_prefix_ranges=["VAH-VBA"]
@@ -765,6 +864,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="095",
+        geojson_id=294,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["XY-XZ"],
             three_letter_prefix_ranges=["VBB-VBR"]
@@ -780,6 +880,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.RURAL,
         api_code="097",
+        geojson_id=295,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["ZG-ZP"],
             three_letter_prefix_ranges=["VBS-VDM"]
@@ -795,6 +896,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="099",
+        geojson_id=296,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["VG-VH"],
             three_letter_prefix_ranges=["VDN-VEY"]
@@ -810,6 +912,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.RURAL,
         api_code="101",
+        geojson_id=297,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["GP-HD"],
             three_letter_prefix_ranges=["VEC-VVC"]
@@ -825,6 +928,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="103",
+        geojson_id=298,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["YV-YW"],
             three_letter_prefix_ranges=["VVD-VVV"]
@@ -840,6 +944,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="105",
+        geojson_id=299,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["WJ-WL"],
             three_letter_prefix_ranges=["VVW-VWZ"]
@@ -855,6 +960,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.RURAL,
         api_code="107",
+        geojson_id=300,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["WZ-XA"],
             three_letter_prefix_ranges=["VXA-VYN"]
@@ -870,6 +976,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="109",
+        geojson_id=301,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["XU-XV"],
             three_letter_prefix_ranges=["VYP-VZA"]
@@ -885,6 +992,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="111",
+        geojson_id=302,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["ZE"],
             three_letter_prefix_ranges=["VZB-VZE"]
@@ -900,6 +1008,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.RURAL,
         api_code="113",
+        geojson_id=303,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["YX"],
             three_letter_prefix_ranges=["VZF-VZR"]
@@ -915,6 +1024,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="115",
+        geojson_id=304,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["YB-YC"],
             three_letter_prefix_ranges=["WNL-WNY"]
@@ -930,6 +1040,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.RURAL,
         api_code="117",
+        geojson_id=305,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["ZL", "ZR"],
             three_letter_prefix_ranges=["WNZ-WRM"]
@@ -945,6 +1056,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.RURAL,
         api_code="119",
+        geojson_id=306,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["YL"],
             three_letter_prefix_ranges=["WRN-WSR"]
@@ -960,6 +1072,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="121",
+        geojson_id=307,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["WW"],
             three_letter_prefix_ranges=["WST-WTK"]
@@ -975,6 +1088,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.RURAL,
         api_code="123",
+        geojson_id=308,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["HY-JM"],
             three_letter_prefix_ranges=["WAA-WNK"]
@@ -990,6 +1104,7 @@ class Counties(WithNameEnum, WithAbbreviationsEnum):
         ),
         zone=Zones.FRONTIER,
         api_code="125",
+        geojson_id=309,
         license_plate_codes=LicensePlateCodes(
             two_letter_prefix_ranges=["VS-VT"],
             three_letter_prefix_ranges=["WTL-WUR"]
