@@ -74,6 +74,7 @@ exclude = [
     "tests",
     "examples",
     "code_writer*",
+    "data*",
 ]
 
 [tool.setuptools]

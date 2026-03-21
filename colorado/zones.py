@@ -1,7 +1,7 @@
-import enum
+from enum import IntEnum
 
 
-class Zones(enum.Enum):
+class Zones(IntEnum):
     """
     Represents the different zones for counties in Colorado, as defined by the Colorado Consortium for Prescription Drug Abuse Prevention.
     """
