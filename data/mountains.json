@@ -10,7 +10,8 @@
                 "fourteen_letter": "GUC"
             },
             "name": "Gunnison-Crested Butte Regional Airport",
-            "iata_code": "GUC"
+            "iata_code": "GUC",
+            "geojson_id": 9
         },
         "latitude": 38.8145,
         "longitude": -107.1445,
@@ -34,7 +35,8 @@
                 "fourteen_letter": "GUC"
             },
             "name": "Gunnison-Crested Butte Regional Airport",
-            "iata_code": "GUC"
+            "iata_code": "GUC",
+            "geojson_id": 9
         },
         "latitude": 38.325,
         "longitude": -106.218,
@@ -58,7 +60,8 @@
                 "fourteen_letter": "ASE"
             },
             "name": "Aspen-Pitkin County/Sardy Field",
-            "iata_code": "ASE"
+            "iata_code": "ASE",
+            "geojson_id": 1
         },
         "latitude": 39.4448,
         "longitude": -105.9705,
@@ -82,7 +85,8 @@
                 "fourteen_letter": "FNL"
             },
             "name": "Northern Colorado Regional Airport",
-            "iata_code": "FNL"
+            "iata_code": "FNL",
+            "geojson_id": 7
         },
         "latitude": 39.7204,
         "longitude": -105.8044,
@@ -106,7 +110,8 @@
                 "fourteen_letter": "ALS"
             },
             "name": "San Luis Valley Regional/Bergman Field",
-            "iata_code": "ALS"
+            "iata_code": "ALS",
+            "geojson_id": 0
         },
         "latitude": 37.4833,
         "longitude": -106.4343,
@@ -130,7 +135,8 @@
                 "fourteen_letter": "ASE"
             },
             "name": "Aspen-Pitkin County/Sardy Field",
-            "iata_code": "ASE"
+            "iata_code": "ASE",
+            "geojson_id": 1
         },
         "latitude": 39.1806,
         "longitude": -106.6102,
@@ -154,7 +160,8 @@
                 "fourteen_letter": "COS"
             },
             "name": "City Of Colorado Springs Municipal Airport",
-            "iata_code": "COS"
+            "iata_code": "COS",
+            "geojson_id": 3
         },
         "latitude": 39.2384,
         "longitude": -105.4978,
@@ -178,7 +185,8 @@
                 "fourteen_letter": "HDN"
             },
             "name": "Yampa Valley Airport",
-            "iata_code": "HDN"
+            "iata_code": "HDN",
+            "geojson_id": 10
         },
         "latitude": 40.7835,
         "longitude": -107.3691,
@@ -202,7 +210,8 @@
                 "fourteen_letter": "COS"
             },
             "name": "City Of Colorado Springs Municipal Airport",
-            "iata_code": "COS"
+            "iata_code": "COS",
+            "geojson_id": 3
         },
         "latitude": 38.7185,
         "longitude": -105.6874,
@@ -226,7 +235,8 @@
                 "fourteen_letter": "EGE"
             },
             "name": "Eagle County Regional Airport",
-            "iata_code": "EGE"
+            "iata_code": "EGE",
+            "geojson_id": 6
         },
         "latitude": 39.7943,
         "longitude": -107.4176,
@@ -250,7 +260,8 @@
                 "fourteen_letter": "ALS"
             },
             "name": "San Luis Valley Regional/Bergman Field",
-            "iata_code": "ALS"
+            "iata_code": "ALS",
+            "geojson_id": 0
         },
         "latitude": 37.5775,
         "longitude": -105.4856,
@@ -274,7 +285,8 @@
                 "fourteen_letter": "ALS"
             },
             "name": "San Luis Valley Regional/Bergman Field",
-            "iata_code": "ALS"
+            "iata_code": "ALS",
+            "geojson_id": 0
         },
         "latitude": 38.3412,
         "longitude": -105.8892,
@@ -298,7 +310,8 @@
                 "fourteen_letter": "ASE"
             },
             "name": "Aspen-Pitkin County/Sardy Field",
-            "iata_code": "ASE"
+            "iata_code": "ASE",
+            "geojson_id": 1
         },
         "latitude": 39.1503,
         "longitude": -107.0829,
@@ -322,7 +335,8 @@
                 "fourteen_letter": "GUC"
             },
             "name": "Gunnison-Crested Butte Regional Airport",
-            "iata_code": "GUC"
+            "iata_code": "GUC",
+            "geojson_id": 9
         },
         "latitude": 38.7943,
         "longitude": -107.0431,
@@ -346,7 +360,8 @@
                 "fourteen_letter": "ASE"
             },
             "name": "Aspen-Pitkin County/Sardy Field",
-            "iata_code": "ASE"
+            "iata_code": "ASE",
+            "geojson_id": 1
         },
         "latitude": 39.0097,
         "longitude": -106.8614,
@@ -370,7 +385,8 @@
                 "fourteen_letter": "EGE"
             },
             "name": "Eagle County Regional Airport",
-            "iata_code": "EGE"
+            "iata_code": "EGE",
+            "geojson_id": 6
         },
         "latitude": 39.7723,
         "longitude": -106.8304,
@@ -394,7 +410,8 @@
                 "fourteen_letter": "ASE"
             },
             "name": "Aspen-Pitkin County/Sardy Field",
-            "iata_code": "ASE"
+            "iata_code": "ASE",
+            "geojson_id": 1
         },
         "latitude": 39.0581,
         "longitude": -107.2822,
@@ -418,7 +435,8 @@
                 "fourteen_letter": "ALS"
             },
             "name": "San Luis Valley Regional/Bergman Field",
-            "iata_code": "ALS"
+            "iata_code": "ALS",
+            "geojson_id": 0
         },
         "latitude": 37.1418,
         "longitude": -106.75,
@@ -442,7 +460,8 @@
                 "fourteen_letter": "FNL"
             },
             "name": "Northern Colorado Regional Airport",
-            "iata_code": "FNL"
+            "iata_code": "FNL",
+            "geojson_id": 7
         },
         "latitude": 40.6068,
         "longitude": -105.93,
@@ -466,7 +485,8 @@
                 "fourteen_letter": "MTJ"
             },
             "name": "Montrose Regional Airport",
-            "iata_code": "MTJ"
+            "iata_code": "MTJ",
+            "geojson_id": 12
         },
         "latitude": 38.787,
         "longitude": -107.4837,
@@ -490,7 +510,8 @@
                 "fourteen_letter": "GUC"
             },
             "name": "Gunnison-Crested Butte Regional Airport",
-            "iata_code": "GUC"
+            "iata_code": "GUC",
+            "geojson_id": 9
         },
         "latitude": 38.2267,
         "longitude": -106.7147,
@@ -514,7 +535,8 @@
                 "fourteen_letter": "HDN"
             },
             "name": "Yampa Valley Airport",
-            "iata_code": "HDN"
+            "iata_code": "HDN",
+            "geojson_id": 10
         },
         "latitude": 40.8799,
         "longitude": -107.1921,
@@ -538,7 +560,8 @@
                 "fourteen_letter": "ALS"
             },
             "name": "San Luis Valley Regional/Bergman Field",
-            "iata_code": "ALS"
+            "iata_code": "ALS",
+            "geojson_id": 0
         },
         "latitude": 37.2887,
         "longitude": -106.5709,
@@ -562,7 +585,8 @@
                 "fourteen_letter": "ALS"
             },
             "name": "San Luis Valley Regional/Bergman Field",
-            "iata_code": "ALS"
+            "iata_code": "ALS",
+            "geojson_id": 0
         },
         "latitude": 37.3811,
         "longitude": -106.492,
@@ -586,7 +610,8 @@
                 "fourteen_letter": "MTJ"
             },
             "name": "Montrose Regional Airport",
-            "iata_code": "MTJ"
+            "iata_code": "MTJ",
+            "geojson_id": 12
         },
         "latitude": 39.0396,
         "longitude": -107.6628,
@@ -610,7 +635,8 @@
                 "fourteen_letter": "ASE"
             },
             "name": "Aspen-Pitkin County/Sardy Field",
-            "iata_code": "ASE"
+            "iata_code": "ASE",
+            "geojson_id": 1
         },
         "latitude": 38.8835,
         "longitude": -106.9436,
@@ -634,7 +660,8 @@
                 "fourteen_letter": "ALS"
             },
             "name": "San Luis Valley Regional/Bergman Field",
-            "iata_code": "ALS"
+            "iata_code": "ALS",
+            "geojson_id": 0
         },
         "latitude": 37.9669,
         "longitude": -105.5855,
@@ -658,7 +685,8 @@
                 "fourteen_letter": "ALS"
             },
             "name": "San Luis Valley Regional/Bergman Field",
-            "iata_code": "ALS"
+            "iata_code": "ALS",
+            "geojson_id": 0
         },
         "latitude": 37.1224,
         "longitude": -105.1858,
@@ -682,7 +710,8 @@
                 "fourteen_letter": "GUC"
             },
             "name": "Gunnison-Crested Butte Regional Airport",
-            "iata_code": "GUC"
+            "iata_code": "GUC",
+            "geojson_id": 9
         },
         "latitude": 38.8464,
         "longitude": -107.2233,
@@ -706,7 +735,8 @@
                 "fourteen_letter": "ALS"
             },
             "name": "San Luis Valley Regional/Bergman Field",
-            "iata_code": "ALS"
+            "iata_code": "ALS",
+            "geojson_id": 0
         },
         "latitude": 37.3934,
         "longitude": -104.9201,
@@ -730,7 +760,8 @@
                 "fourteen_letter": "EGE"
             },
             "name": "Eagle County Regional Airport",
-            "iata_code": "EGE"
+            "iata_code": "EGE",
+            "geojson_id": 6
         },
         "latitude": 40.1619,
         "longitude": -106.1285,
@@ -754,7 +785,8 @@
                 "fourteen_letter": "TEX"
             },
             "name": "Telluride Regional Airport",
-            "iata_code": "TEX"
+            "iata_code": "TEX",
+            "geojson_id": 15
         },
         "latitude": 37.7344,
         "longitude": -108.058,
@@ -778,7 +810,8 @@
                 "fourteen_letter": "EGE"
             },
             "name": "Eagle County Regional Airport",
-            "iata_code": "EGE"
+            "iata_code": "EGE",
+            "geojson_id": 6
         },
         "latitude": 40.0147,
         "longitude": -107.0833,
@@ -802,7 +835,8 @@
                 "fourteen_letter": "ASE"
             },
             "name": "Aspen-Pitkin County/Sardy Field",
-            "iata_code": "ASE"
+            "iata_code": "ASE",
+            "geojson_id": 1
         },
         "latitude": 38.9562,
         "longitude": -107.0107,
@@ -826,7 +860,8 @@
                 "fourteen_letter": "DRO"
             },
             "name": "Durango-La Plata County Airport",
-            "iata_code": "DRO"
+            "iata_code": "DRO",
+            "geojson_id": 5
         },
         "latitude": 37.4972,
         "longitude": -107.3761,
@@ -850,7 +885,8 @@
                 "fourteen_letter": "EGE"
             },
             "name": "Eagle County Regional Airport",
-            "iata_code": "EGE"
+            "iata_code": "EGE",
+            "geojson_id": 6
         },
         "latitude": 39.6339,
         "longitude": -105.8176,
@@ -874,7 +910,8 @@
                 "fourteen_letter": "COS"
             },
             "name": "City Of Colorado Springs Municipal Airport",
-            "iata_code": "COS"
+            "iata_code": "COS",
+            "geojson_id": 3
         },
         "latitude": 39.3053,
         "longitude": -105.3001,
@@ -898,7 +935,8 @@
                 "fourteen_letter": "PUB"
             },
             "name": "Pueblo Memorial Airport",
-            "iata_code": "PUB"
+            "iata_code": "PUB",
+            "geojson_id": 13
         },
         "latitude": 37.8815,
         "longitude": -105.0133,
@@ -922,7 +960,8 @@
                 "fourteen_letter": "ASE"
             },
             "name": "Aspen-Pitkin County/Sardy Field",
-            "iata_code": "ASE"
+            "iata_code": "ASE",
+            "geojson_id": 1
         },
         "latitude": 39.0425,
         "longitude": -106.5976,
@@ -946,7 +985,8 @@
                 "fourteen_letter": "FNL"
             },
             "name": "Northern Colorado Regional Airport",
-            "iata_code": "FNL"
+            "iata_code": "FNL",
+            "geojson_id": 7
         },
         "latitude": 40.4845,
         "longitude": -105.6464,
@@ -970,7 +1010,8 @@
                 "fourteen_letter": "TEX"
             },
             "name": "Telluride Regional Airport",
-            "iata_code": "TEX"
+            "iata_code": "TEX",
+            "geojson_id": 15
         },
         "latitude": 37.913,
         "longitude": -107.5044,
@@ -994,7 +1035,8 @@
                 "fourteen_letter": "EGE"
             },
             "name": "Eagle County Regional Airport",
-            "iata_code": "EGE"
+            "iata_code": "EGE",
+            "geojson_id": 6
         },
         "latitude": 39.5171,
         "longitude": -106.8021,
@@ -1018,7 +1060,8 @@
                 "fourteen_letter": "GUC"
             },
             "name": "Gunnison-Crested Butte Regional Airport",
-            "iata_code": "GUC"
+            "iata_code": "GUC",
+            "geojson_id": 9
         },
         "latitude": 38.6856,
         "longitude": -106.6211,
@@ -1042,7 +1085,8 @@
                 "fourteen_letter": "DRO"
             },
             "name": "Durango-La Plata County Airport",
-            "iata_code": "DRO"
+            "iata_code": "DRO",
+            "geojson_id": 5
         },
         "latitude": 37.4451,
         "longitude": -108.089,
@@ -1066,7 +1110,8 @@
                 "fourteen_letter": "DRO"
             },
             "name": "Durango-La Plata County Airport",
-            "iata_code": "DRO"
+            "iata_code": "DRO",
+            "geojson_id": 5
         },
         "latitude": 37.308,
         "longitude": -107.2864,
@@ -1090,7 +1135,8 @@
                 "fourteen_letter": "ASE"
             },
             "name": "Aspen-Pitkin County/Sardy Field",
-            "iata_code": "ASE"
+            "iata_code": "ASE",
+            "geojson_id": 1
         },
         "latitude": 39.192,
         "longitude": -107.3668,
@@ -1114,7 +1160,8 @@
                 "fourteen_letter": "ALS"
             },
             "name": "San Luis Valley Regional/Bergman Field",
-            "iata_code": "ALS"
+            "iata_code": "ALS",
+            "geojson_id": 0
         },
         "latitude": 37.6375,
         "longitude": -105.2538,
@@ -1138,7 +1185,8 @@
                 "fourteen_letter": "ASE"
             },
             "name": "Aspen-Pitkin County/Sardy Field",
-            "iata_code": "ASE"
+            "iata_code": "ASE",
+            "geojson_id": 1
         },
         "latitude": 39.4549,
         "longitude": -106.197,
@@ -1162,7 +1210,8 @@
                 "fourteen_letter": "DEN"
             },
             "name": "Denver International Airport",
-            "iata_code": "DEN"
+            "iata_code": "DEN",
+            "geojson_id": 4
         },
         "latitude": 39.3681,
         "longitude": -105.605,
@@ -1186,7 +1235,8 @@
                 "fourteen_letter": "ASE"
             },
             "name": "Aspen-Pitkin County/Sardy Field",
-            "iata_code": "ASE"
+            "iata_code": "ASE",
+            "geojson_id": 1
         },
         "latitude": 39.0294,
         "longitude": -106.4729,
@@ -1210,7 +1260,8 @@
                 "fourteen_letter": "FNL"
             },
             "name": "Northern Colorado Regional Airport",
-            "iata_code": "FNL"
+            "iata_code": "FNL",
+            "geojson_id": 7
         },
         "latitude": 40.7704,
         "longitude": -105.7162,
@@ -1234,7 +1285,8 @@
                 "fourteen_letter": "TEX"
             },
             "name": "Telluride Regional Airport",
-            "iata_code": "TEX"
+            "iata_code": "TEX",
+            "geojson_id": 15
         },
         "latitude": 37.9275,
         "longitude": -108.0908,
@@ -1258,7 +1310,8 @@
                 "fourteen_letter": "TEX"
             },
             "name": "Telluride Regional Airport",
-            "iata_code": "TEX"
+            "iata_code": "TEX",
+            "geojson_id": 15
         },
         "latitude": 37.888,
         "longitude": -108.2556,
@@ -1282,7 +1335,8 @@
                 "fourteen_letter": "FNL"
             },
             "name": "Northern Colorado Regional Airport",
-            "iata_code": "FNL"
+            "iata_code": "FNL",
+            "geojson_id": 7
         },
         "latitude": 40.255,
         "longitude": -105.6151,
@@ -1306,7 +1360,8 @@
                 "fourteen_letter": "ASE"
             },
             "name": "Aspen-Pitkin County/Sardy Field",
-            "iata_code": "ASE"
+            "iata_code": "ASE",
+            "geojson_id": 1
         },
         "latitude": 38.9299,
         "longitude": -107.2438,
@@ -1330,7 +1385,8 @@
                 "fourteen_letter": "ASE"
             },
             "name": "Aspen-Pitkin County/Sardy Field",
-            "iata_code": "ASE"
+            "iata_code": "ASE",
+            "geojson_id": 1
         },
         "latitude": 39.0708,
         "longitude": -106.989,
@@ -1354,7 +1410,8 @@
                 "fourteen_letter": "GUC"
             },
             "name": "Gunnison-Crested Butte Regional Airport",
-            "iata_code": "GUC"
+            "iata_code": "GUC",
+            "geojson_id": 9
         },
         "latitude": 38.834,
         "longitude": -106.6451,
@@ -1378,7 +1435,8 @@
                 "fourteen_letter": "TEX"
             },
             "name": "Telluride Regional Airport",
-            "iata_code": "TEX"
+            "iata_code": "TEX",
+            "geojson_id": 15
         },
         "latitude": 37.8536,
         "longitude": -108.1082,
@@ -1402,7 +1460,8 @@
                 "fourteen_letter": "GUC"
             },
             "name": "Gunnison-Crested Butte Regional Airport",
-            "iata_code": "GUC"
+            "iata_code": "GUC",
+            "geojson_id": 9
         },
         "latitude": 38.6741,
         "longitude": -106.2462,
@@ -1426,7 +1485,8 @@
                 "fourteen_letter": "DEN"
             },
             "name": "Denver International Airport",
-            "iata_code": "DEN"
+            "iata_code": "DEN",
+            "geojson_id": 4
         },
         "latitude": 39.5883,
         "longitude": -105.6438,
@@ -1450,7 +1510,8 @@
                 "fourteen_letter": "DRO"
             },
             "name": "Durango-La Plata County Airport",
-            "iata_code": "DRO"
+            "iata_code": "DRO",
+            "geojson_id": 5
         },
         "latitude": 37.6062,
         "longitude": -107.2446,
@@ -1474,7 +1535,8 @@
                 "fourteen_letter": "ASE"
             },
             "name": "Aspen-Pitkin County/Sardy Field",
-            "iata_code": "ASE"
+            "iata_code": "ASE",
+            "geojson_id": 1
         },
         "latitude": 39.1178,
         "longitude": -106.4454,
@@ -1498,7 +1560,8 @@
                 "fourteen_letter": "GUC"
             },
             "name": "Gunnison-Crested Butte Regional Airport",
-            "iata_code": "GUC"
+            "iata_code": "GUC",
+            "geojson_id": 9
         },
         "latitude": 38.7196,
         "longitude": -107.3861,
@@ -1522,7 +1585,8 @@
                 "fourteen_letter": "GUC"
             },
             "name": "Gunnison-Crested Butte Regional Airport",
-            "iata_code": "GUC"
+            "iata_code": "GUC",
+            "geojson_id": 9
         },
         "latitude": 38.8121,
         "longitude": -107.3826,
@@ -1546,7 +1610,8 @@
                 "fourteen_letter": "ASE"
             },
             "name": "Aspen-Pitkin County/Sardy Field",
-            "iata_code": "ASE"
+            "iata_code": "ASE",
+            "geojson_id": 1
         },
         "latitude": 38.9244,
         "longitude": -106.3207,
@@ -1570,7 +1635,8 @@
                 "fourteen_letter": "ALS"
             },
             "name": "San Luis Valley Regional/Bergman Field",
-            "iata_code": "ALS"
+            "iata_code": "ALS",
+            "geojson_id": 0
         },
         "latitude": 37.8492,
         "longitude": -105.4949,
@@ -1594,7 +1660,8 @@
                 "fourteen_letter": "EGE"
             },
             "name": "Eagle County Regional Airport",
-            "iata_code": "EGE"
+            "iata_code": "EGE",
+            "geojson_id": 6
         },
         "latitude": 39.4853,
         "longitude": -106.5367,
@@ -1618,7 +1685,8 @@
                 "fourteen_letter": "ASE"
             },
             "name": "Aspen-Pitkin County/Sardy Field",
-            "iata_code": "ASE"
+            "iata_code": "ASE",
+            "geojson_id": 1
         },
         "latitude": 39.3515,
         "longitude": -106.1116,
@@ -1642,7 +1710,8 @@
                 "fourteen_letter": "ASE"
             },
             "name": "Aspen-Pitkin County/Sardy Field",
-            "iata_code": "ASE"
+            "iata_code": "ASE",
+            "geojson_id": 1
         },
         "latitude": 39.1875,
         "longitude": -106.4757,
@@ -1666,7 +1735,8 @@
                 "fourteen_letter": "ALS"
             },
             "name": "San Luis Valley Regional/Bergman Field",
-            "iata_code": "ALS"
+            "iata_code": "ALS",
+            "geojson_id": 0
         },
         "latitude": 37.583,
         "longitude": -105.1474,
@@ -1690,7 +1760,8 @@
                 "fourteen_letter": "DRO"
             },
             "name": "Durango-La Plata County Airport",
-            "iata_code": "DRO"
+            "iata_code": "DRO",
+            "geojson_id": 5
         },
         "latitude": 37.607,
         "longitude": -107.4936,
@@ -1714,7 +1785,8 @@
                 "fourteen_letter": "GUC"
             },
             "name": "Gunnison-Crested Butte Regional Airport",
-            "iata_code": "GUC"
+            "iata_code": "GUC",
+            "geojson_id": 9
         },
         "latitude": 38.4227,
         "longitude": -106.2247,
@@ -1738,7 +1810,8 @@
                 "fourteen_letter": "EGE"
             },
             "name": "Eagle County Regional Airport",
-            "iata_code": "EGE"
+            "iata_code": "EGE",
+            "geojson_id": 6
         },
         "latitude": 39.7601,
         "longitude": -106.3407,
@@ -1762,7 +1835,8 @@
                 "fourteen_letter": "GUC"
             },
             "name": "Gunnison-Crested Butte Regional Airport",
-            "iata_code": "GUC"
+            "iata_code": "GUC",
+            "geojson_id": 9
         },
         "latitude": 38.7492,
         "longitude": -106.2424,
@@ -1786,7 +1860,8 @@
                 "fourteen_letter": "FNL"
             },
             "name": "Northern Colorado Regional Airport",
-            "iata_code": "FNL"
+            "iata_code": "FNL",
+            "geojson_id": 7
         },
         "latitude": 40.4695,
         "longitude": -105.8945,
@@ -1810,7 +1885,8 @@
                 "fourteen_letter": "ASE"
             },
             "name": "Aspen-Pitkin County/Sardy Field",
-            "iata_code": "ASE"
+            "iata_code": "ASE",
+            "geojson_id": 1
         },
         "latitude": 39.3394,
         "longitude": -106.0054,
@@ -1834,7 +1910,8 @@
                 "fourteen_letter": "TEX"
             },
             "name": "Telluride Regional Airport",
-            "iata_code": "TEX"
+            "iata_code": "TEX",
+            "geojson_id": 15
         },
         "latitude": 38.0038,
         "longitude": -107.7923,
@@ -1858,7 +1935,8 @@
                 "fourteen_letter": "TEX"
             },
             "name": "Telluride Regional Airport",
-            "iata_code": "TEX"
+            "iata_code": "TEX",
+            "geojson_id": 15
         },
         "latitude": 37.8391,
         "longitude": -107.9916,
@@ -1882,7 +1960,8 @@
                 "fourteen_letter": "ASE"
             },
             "name": "Aspen-Pitkin County/Sardy Field",
-            "iata_code": "ASE"
+            "iata_code": "ASE",
+            "geojson_id": 1
         },
         "latitude": 38.8442,
         "longitude": -106.3138,
@@ -1906,7 +1985,8 @@
                 "fourteen_letter": "HDN"
             },
             "name": "Yampa Valley Airport",
-            "iata_code": "HDN"
+            "iata_code": "HDN",
+            "geojson_id": 10
         },
         "latitude": 40.8313,
         "longitude": -106.6631,
@@ -1930,7 +2010,8 @@
                 "fourteen_letter": "ALS"
             },
             "name": "San Luis Valley Regional/Bergman Field",
-            "iata_code": "ALS"
+            "iata_code": "ALS",
+            "geojson_id": 0
         },
         "latitude": 37.7913,
         "longitude": -105.4554,
@@ -1954,7 +2035,8 @@
                 "fourteen_letter": "ASE"
             },
             "name": "Aspen-Pitkin County/Sardy Field",
-            "iata_code": "ASE"
+            "iata_code": "ASE",
+            "geojson_id": 1
         },
         "latitude": 39.4668,
         "longitude": -106.4817,
@@ -1978,7 +2060,8 @@
                 "fourteen_letter": "FNL"
             },
             "name": "Northern Colorado Regional Airport",
-            "iata_code": "FNL"
+            "iata_code": "FNL",
+            "geojson_id": 7
         },
         "latitude": 40.0265,
         "longitude": -105.6504,
@@ -2002,7 +2085,8 @@
                 "fourteen_letter": "GJT"
             },
             "name": "Grand Junction Regional Airport",
-            "iata_code": "GJT"
+            "iata_code": "GJT",
+            "geojson_id": 8
         },
         "latitude": 39.3865,
         "longitude": -107.866,
@@ -2026,7 +2110,8 @@
                 "fourteen_letter": "GUC"
             },
             "name": "Gunnison-Crested Butte Regional Airport",
-            "iata_code": "GUC"
+            "iata_code": "GUC",
+            "geojson_id": 9
         },
         "latitude": 38.7967,
         "longitude": -106.6028,
@@ -2050,7 +2135,8 @@
                 "fourteen_letter": "EGE"
             },
             "name": "Eagle County Regional Airport",
-            "iata_code": "EGE"
+            "iata_code": "EGE",
+            "geojson_id": 6
         },
         "latitude": 40.3303,
         "longitude": -106.1363,
@@ -2074,7 +2160,8 @@
                 "fourteen_letter": "FNL"
             },
             "name": "Northern Colorado Regional Airport",
-            "iata_code": "FNL"
+            "iata_code": "FNL",
+            "geojson_id": 7
         },
         "latitude": 39.8381,
         "longitude": -105.7132,
@@ -2098,7 +2185,8 @@
                 "fourteen_letter": "COS"
             },
             "name": "City Of Colorado Springs Municipal Airport",
-            "iata_code": "COS"
+            "iata_code": "COS",
+            "geojson_id": 3
         },
         "latitude": 38.8405,
         "longitude": -105.0442,
@@ -2122,7 +2210,8 @@
                 "fourteen_letter": "COS"
             },
             "name": "City Of Colorado Springs Municipal Airport",
-            "iata_code": "COS"
+            "iata_code": "COS",
+            "geojson_id": 3
         },
         "latitude": 39.1572,
         "longitude": -105.5815,
@@ -2146,7 +2235,8 @@
                 "fourteen_letter": "ASE"
             },
             "name": "Aspen-Pitkin County/Sardy Field",
-            "iata_code": "ASE"
+            "iata_code": "ASE",
+            "geojson_id": 1
         },
         "latitude": 39.4181,
         "longitude": -106.7712,
@@ -2170,7 +2260,8 @@
                 "fourteen_letter": "TEX"
             },
             "name": "Telluride Regional Airport",
-            "iata_code": "TEX"
+            "iata_code": "TEX",
+            "geojson_id": 15
         },
         "latitude": 37.6797,
         "longitude": -107.3924,
@@ -2194,7 +2285,8 @@
                 "fourteen_letter": "GUC"
             },
             "name": "Gunnison-Crested Butte Regional Airport",
-            "iata_code": "GUC"
+            "iata_code": "GUC",
+            "geojson_id": 9
         },
         "latitude": 37.9868,
         "longitude": -106.9313,
@@ -2218,7 +2310,8 @@
                 "fourteen_letter": "HDN"
             },
             "name": "Yampa Valley Airport",
-            "iata_code": "HDN"
+            "iata_code": "HDN",
+            "geojson_id": 10
         },
         "latitude": 40.7636,
         "longitude": -107.0575,
@@ -2242,7 +2335,8 @@
                 "fourteen_letter": "GUC"
             },
             "name": "Gunnison-Crested Butte Regional Airport",
-            "iata_code": "GUC"
+            "iata_code": "GUC",
+            "geojson_id": 9
         },
         "latitude": 38.274,
         "longitude": -106.867,
@@ -2266,7 +2360,8 @@
                 "fourteen_letter": "HDN"
             },
             "name": "Yampa Valley Airport",
-            "iata_code": "HDN"
+            "iata_code": "HDN",
+            "geojson_id": 10
         },
         "latitude": 40.361,
         "longitude": -106.2658,
@@ -2290,7 +2385,8 @@
                 "fourteen_letter": "HDN"
             },
             "name": "Yampa Valley Airport",
-            "iata_code": "HDN"
+            "iata_code": "HDN",
+            "geojson_id": 10
         },
         "latitude": 40.1275,
         "longitude": -107.5338,
@@ -2314,7 +2410,8 @@
                 "fourteen_letter": "DRO"
             },
             "name": "Durango-La Plata County Airport",
-            "iata_code": "DRO"
+            "iata_code": "DRO",
+            "geojson_id": 5
         },
         "latitude": 37.5741,
         "longitude": -106.9815,
@@ -2338,7 +2435,8 @@
                 "fourteen_letter": "FNL"
             },
             "name": "Northern Colorado Regional Airport",
-            "iata_code": "FNL"
+            "iata_code": "FNL",
+            "geojson_id": 7
         },
         "latitude": 40.4449,
         "longitude": -105.8081,
@@ -2362,7 +2460,8 @@
                 "fourteen_letter": "ASE"
             },
             "name": "Aspen-Pitkin County/Sardy Field",
-            "iata_code": "ASE"
+            "iata_code": "ASE",
+            "geojson_id": 1
         },
         "latitude": 39.1973,
         "longitude": -107.522,
@@ -2386,7 +2485,8 @@
                 "fourteen_letter": "TEX"
             },
             "name": "Telluride Regional Airport",
-            "iata_code": "TEX"
+            "iata_code": "TEX",
+            "geojson_id": 15
         },
         "latitude": 37.7859,
         "longitude": -107.7038,
@@ -2410,7 +2510,8 @@
                 "fourteen_letter": "ALS"
             },
             "name": "San Luis Valley Regional/Bergman Field",
-            "iata_code": "ALS"
+            "iata_code": "ALS",
+            "geojson_id": 0
         },
         "latitude": 37.3506,
         "longitude": -106.6968,
@@ -2434,7 +2535,8 @@
                 "fourteen_letter": "COS"
             },
             "name": "City Of Colorado Springs Municipal Airport",
-            "iata_code": "COS"
+            "iata_code": "COS",
+            "geojson_id": 3
         },
         "latitude": 38.8324,
         "longitude": -105.5553,
@@ -2458,7 +2560,8 @@
                 "fourteen_letter": "GUC"
             },
             "name": "Gunnison-Crested Butte Regional Airport",
-            "iata_code": "GUC"
+            "iata_code": "GUC",
+            "geojson_id": 9
         },
         "latitude": 38.4849,
         "longitude": -106.5291,
@@ -2482,7 +2585,8 @@
                 "fourteen_letter": "TEX"
             },
             "name": "Telluride Regional Airport",
-            "iata_code": "TEX"
+            "iata_code": "TEX",
+            "geojson_id": 15
         },
         "latitude": 37.8573,
         "longitude": -107.623,
@@ -2506,7 +2610,8 @@
                 "fourteen_letter": "ASE"
             },
             "name": "Aspen-Pitkin County/Sardy Field",
-            "iata_code": "ASE"
+            "iata_code": "ASE",
+            "geojson_id": 1
         },
         "latitude": 39.0244,
         "longitude": -107.1228,
@@ -2530,7 +2635,8 @@
                 "fourteen_letter": "TEX"
             },
             "name": "Telluride Regional Airport",
-            "iata_code": "TEX"
+            "iata_code": "TEX",
+            "geojson_id": 15
         },
         "latitude": 37.663,
         "longitude": -107.727,
@@ -2554,7 +2660,8 @@
                 "fourteen_letter": "FNL"
             },
             "name": "Northern Colorado Regional Airport",
-            "iata_code": "FNL"
+            "iata_code": "FNL",
+            "geojson_id": 7
         },
         "latitude": 40.2886,
         "longitude": -105.5175,
@@ -2578,7 +2685,8 @@
                 "fourteen_letter": "TEX"
             },
             "name": "Telluride Regional Airport",
-            "iata_code": "TEX"
+            "iata_code": "TEX",
+            "geojson_id": 15
         },
         "latitude": 38.0717,
         "longitude": -107.4621,
@@ -2602,7 +2710,8 @@
                 "fourteen_letter": "CEZ"
             },
             "name": "Cortez Municipal Airport",
-            "iata_code": "CEZ"
+            "iata_code": "CEZ",
+            "geojson_id": 2
         },
         "latitude": 37.2841,
         "longitude": -108.7787,
@@ -2626,7 +2735,8 @@
                 "fourteen_letter": "TEX"
             },
             "name": "Telluride Regional Airport",
-            "iata_code": "TEX"
+            "iata_code": "TEX",
+            "geojson_id": 15
         },
         "latitude": 37.7993,
         "longitude": -107.8285,
@@ -2650,7 +2760,8 @@
                 "fourteen_letter": "COS"
             },
             "name": "City Of Colorado Springs Municipal Airport",
-            "iata_code": "COS"
+            "iata_code": "COS",
+            "geojson_id": 3
         },
         "latitude": 38.6022,
         "longitude": -105.6955,
@@ -2674,7 +2785,8 @@
                 "fourteen_letter": "ASE"
             },
             "name": "Aspen-Pitkin County/Sardy Field",
-            "iata_code": "ASE"
+            "iata_code": "ASE",
+            "geojson_id": 1
         },
         "latitude": 38.9917,
         "longitude": -106.1249,
@@ -2698,7 +2810,8 @@
                 "fourteen_letter": "GUC"
             },
             "name": "Gunnison-Crested Butte Regional Airport",
-            "iata_code": "GUC"
+            "iata_code": "GUC",
+            "geojson_id": 9
         },
         "latitude": 38.7179,
         "longitude": -107.1994,
@@ -2722,7 +2835,8 @@
                 "fourteen_letter": "ALS"
             },
             "name": "San Luis Valley Regional/Bergman Field",
-            "iata_code": "ALS"
+            "iata_code": "ALS",
+            "geojson_id": 0
         },
         "latitude": 37.3756,
         "longitude": -104.9934,
@@ -2746,7 +2860,8 @@
                 "fourteen_letter": "GUC"
             },
             "name": "Gunnison-Crested Butte Regional Airport",
-            "iata_code": "GUC"
+            "iata_code": "GUC",
+            "geojson_id": 9
         },
         "latitude": 38.8223,
         "longitude": -106.9799,
@@ -2770,7 +2885,8 @@
                 "fourteen_letter": "EGE"
             },
             "name": "Eagle County Regional Airport",
-            "iata_code": "EGE"
+            "iata_code": "EGE",
+            "geojson_id": 6
         },
         "latitude": 39.8552,
         "longitude": -106.1854,
@@ -2794,7 +2910,8 @@
                 "fourteen_letter": "TEX"
             },
             "name": "Telluride Regional Airport",
-            "iata_code": "TEX"
+            "iata_code": "TEX",
+            "geojson_id": 15
         },
         "latitude": 37.6212,
         "longitude": -107.5919,

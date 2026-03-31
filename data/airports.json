@@ -9,7 +9,8 @@
             "fourteen_letter": "ASE"
         },
         "name": "Aspen-Pitkin County/Sardy Field",
-        "iata_code": "ASE"
+        "iata_code": "ASE",
+        "geojson_id": 1
     },
     {
         "latitude": 38.805817,
@@ -21,7 +22,8 @@
             "fourteen_letter": "COS"
         },
         "name": "City Of Colorado Springs Municipal Airport",
-        "iata_code": "COS"
+        "iata_code": "COS",
+        "geojson_id": 3
     },
     {
         "latitude": 37.303002,
@@ -33,7 +35,8 @@
             "fourteen_letter": "CEZ"
         },
         "name": "Cortez Municipal Airport",
-        "iata_code": "CEZ"
+        "iata_code": "CEZ",
+        "geojson_id": 2
     },
     {
         "latitude": 39.861667,
@@ -45,7 +48,8 @@
             "fourteen_letter": "DEN"
         },
         "name": "Denver International Airport",
-        "iata_code": "DEN"
+        "iata_code": "DEN",
+        "geojson_id": 4
     },
     {
         "latitude": 37.151528,
@@ -57,7 +61,8 @@
             "fourteen_letter": "DRO"
         },
         "name": "Durango-La Plata County Airport",
-        "iata_code": "DRO"
+        "iata_code": "DRO",
+        "geojson_id": 5
     },
     {
         "latitude": 39.64275,
@@ -69,7 +74,8 @@
             "fourteen_letter": "EGE"
         },
         "name": "Eagle County Regional Airport",
-        "iata_code": "EGE"
+        "iata_code": "EGE",
+        "geojson_id": 6
     },
     {
         "latitude": 39.121499,
@@ -81,7 +87,8 @@
             "fourteen_letter": "GJT"
         },
         "name": "Grand Junction Regional Airport",
-        "iata_code": "GJT"
+        "iata_code": "GJT",
+        "geojson_id": 8
     },
     {
         "latitude": 38.534333,
@@ -93,7 +100,8 @@
             "fourteen_letter": "GUC"
         },
         "name": "Gunnison-Crested Butte Regional Airport",
-        "iata_code": "GUC"
+        "iata_code": "GUC",
+        "geojson_id": 9
     },
     {
         "latitude": 38.509806,
@@ -105,7 +113,8 @@
             "fourteen_letter": "MTJ"
         },
         "name": "Montrose Regional Airport",
-        "iata_code": "MTJ"
+        "iata_code": "MTJ",
+        "geojson_id": 12
     },
     {
         "latitude": 40.451816,
@@ -117,7 +126,8 @@
             "fourteen_letter": "FNL"
         },
         "name": "Northern Colorado Regional Airport",
-        "iata_code": "FNL"
+        "iata_code": "FNL",
+        "geojson_id": 7
     },
     {
         "latitude": 38.289947,
@@ -129,7 +139,8 @@
             "fourteen_letter": "PUB"
         },
         "name": "Pueblo Memorial Airport",
-        "iata_code": "PUB"
+        "iata_code": "PUB",
+        "geojson_id": 13
     },
     {
         "latitude": 37.435125,
@@ -141,7 +152,8 @@
             "fourteen_letter": "ALS"
         },
         "name": "San Luis Valley Regional/Bergman Field",
-        "iata_code": "ALS"
+        "iata_code": "ALS",
+        "geojson_id": 0
     },
     {
         "latitude": 38.069704,
@@ -153,7 +165,8 @@
             "fourteen_letter": "LAA"
         },
         "name": "Southeast Colorado Regional Airport",
-        "iata_code": "LAA"
+        "iata_code": "LAA",
+        "geojson_id": 11
     },
     {
         "latitude": 40.614298,
@@ -165,7 +178,8 @@
             "fourteen_letter": "STK"
         },
         "name": "Sterling Municipal Airport",
-        "iata_code": "STK"
+        "iata_code": "STK",
+        "geojson_id": 14
     },
     {
         "latitude": 37.953806,
@@ -177,7 +191,8 @@
             "fourteen_letter": "TEX"
         },
         "name": "Telluride Regional Airport",
-        "iata_code": "TEX"
+        "iata_code": "TEX",
+        "geojson_id": 15
     },
     {
         "latitude": 40.481194,
@@ -189,6 +204,7 @@
             "fourteen_letter": "HDN"
         },
         "name": "Yampa Valley Airport",
-        "iata_code": "HDN"
+        "iata_code": "HDN",
+        "geojson_id": 10
     }
 ]
